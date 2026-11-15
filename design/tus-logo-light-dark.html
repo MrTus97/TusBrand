@@ -1,0 +1,103 @@
+<title>Tus Logo Light Dark</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lexend:wght@500;600&family=Be+Vietnam+Pro:wght@400;500;600&display=swap">
+<style>
+/* Layout: hai bảng giả lập (sáng, tối) đặt cạnh nhau; mỗi bảng tự giữ màu nền riêng, không theo theme trang. */
+:root{--paper:#F4F4F7;--card:#FFFFFF;--ink:#16151C;--muted:#5E5D6B;--line:#DCDBE3;
+  --display:"Lexend","Be Vietnam Pro",system-ui,sans-serif;--body:"Be Vietnam Pro",system-ui,-apple-system,"Segoe UI",sans-serif}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){--paper:#121118;--card:#1B1A23;--ink:#ECEBF2;--muted:#A09FAE;--line:#2D2C38;color-scheme:dark}}
+:root[data-theme="dark"]{--paper:#121118;--card:#1B1A23;--ink:#ECEBF2;--muted:#A09FAE;--line:#2D2C38;color-scheme:dark}
+body{background:var(--paper);color:var(--ink);font-family:var(--body);font-size:16px;line-height:1.6}
+.wrap{max-width:1100px;margin:0 auto;padding-block:48px 80px;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));display:flex;flex-direction:column;gap:40px}
+h1,h2,h3{font-family:var(--display);font-weight:600;line-height:1.2;margin:0;text-wrap:balance}
+h1{font-size:clamp(28px,5vw,40px)} h2{font-size:20px} h3{font-size:17px}
+p{margin:0;max-width:72ch} .muted{color:var(--muted)}
+.intro{display:flex;flex-direction:column;gap:12px}
+.modes{display:grid;grid-template-columns:1fr 1fr;gap:20px}
+.mode{display:flex;flex-direction:column;gap:12px;min-width:0}
+.mode-head{display:flex;flex-direction:column;gap:2px}
+.mode-head .muted{font-size:14px;font-variant-numeric:tabular-nums}
+.mock{border:1px solid;border-radius:10px;overflow:hidden;font-size:14px}
+.tabs{display:flex;gap:2px;padding:8px 8px 0;border-bottom:1px solid}
+.tab{display:flex;align-items:center;gap:8px;padding:8px 14px;border-radius:8px 8px 0 0;min-width:0;white-space:nowrap;overflow:hidden}
+.tab.dim{background:transparent}
+.site{display:flex;justify-content:space-between;align-items:center;gap:12px;padding:14px 20px;border-bottom:1px solid;flex-wrap:wrap}
+.brand{display:flex;align-items:center;gap:10px;font-family:var(--display);font-weight:600;font-size:16px}
+nav{display:flex;gap:16px}
+.hero-mock{display:flex;align-items:center;justify-content:center;gap:36px;padding:40px 20px;flex-wrap:wrap}
+.swatches{display:flex;flex-direction:column;gap:10px}
+.swatches div{display:grid;grid-template-columns:28px auto;column-gap:10px;align-items:center}
+.swatches i{width:28px;height:28px;border-radius:6px;grid-row:span 2}
+.swatches code{font-size:13px} .swatches small{font-size:12px}
+.icons{display:flex;align-items:center;gap:28px;padding:18px 20px;border-top:1px solid;flex-wrap:wrap}
+.appicon{width:76px;height:76px;border-radius:18px;display:grid;place-items:center}
+.sizes-row{display:flex;align-items:flex-end;gap:20px}
+.ask{background:var(--card);border:1px solid var(--line);border-radius:6px;padding:24px clamp(20px,4vw,32px)}
+.ask ul{margin:12px 0 0;padding-left:20px;display:flex;flex-direction:column;gap:6px}
+@media (max-width:760px){.modes{grid-template-columns:1fr}}
+</style>
+<main class="wrap">
+  <header class="intro">
+    <h1>Logo TUS, sáng và tối</h1>
+    <p class="muted">Hai bảng màu theo kiểu chủ đề sáng và tối của VS Code. Ở chế độ sáng, logo giữ màu tím than của thương hiệu trên nền trắng. Ở chế độ tối, màu tím than gần như biến mất trên nền xám đen (tương phản chỉ 1,3 : 1), nên logo chuyển sang tím oải hương cùng họ màu: vẫn trầm, hợp với nền tối, nhưng đủ sáng để nổi.</p>
+  </header>
+  <div class="modes">
+  <section class="mode">
+    <div class="mode-head"><h2>Light mode</h2><span class="muted">Nền #FFFFFF · logo #251097 · tương phản 13,1 : 1</span></div>
+    <div class="mock" style="background:#FFFFFF;border-color:#E5E5E5;color:#1F1F1F">
+      <div class="tabs" style="background:#F3F3F3;border-color:#E5E5E5">
+        <div class="tab" style="background:#FFFFFF;color:#1F1F1F"><svg viewBox="-110.6 -124.0 221.2 248.0" class="mk" style="width:16px;height:auto;display:block"><defs><mask id="light-fav" maskUnits="userSpaceOnUse" x="-200" y="-200" width="400" height="400"><rect x="-200" y="-200" width="400" height="400" fill="#000"/><g fill="none" stroke="#fff" stroke-width="24" stroke-linejoin="round" stroke-linecap="round"><path d="M-86.60,-50.00 L0.00,-100.00 L86.60,-50.00"/><path d="M0.00,-85.60 L0.00,100.00"/><path d="M-86.60,-4.40 L-86.60,50.00 L0.00,100.00"/><path d="M0.00,-54.40 L86.60,-4.40 L86.60,50.00 L39.49,77.20"/></g></mask></defs><rect x="-200" y="-200" width="400" height="400" fill="#251097" mask="url(#light-fav)"/></svg><span>tupt.dev</span></div>
+        <div class="tab dim" style="color:#616161"><svg viewBox="-110.6 -124.0 221.2 248.0" class="mk" style="width:16px;height:auto;display:block"><defs><mask id="light-fav2" maskUnits="userSpaceOnUse" x="-200" y="-200" width="400" height="400"><rect x="-200" y="-200" width="400" height="400" fill="#000"/><g fill="none" stroke="#fff" stroke-width="24" stroke-linejoin="round" stroke-linecap="round"><path d="M-86.60,-50.00 L0.00,-100.00 L86.60,-50.00"/><path d="M0.00,-85.60 L0.00,100.00"/><path d="M-86.60,-4.40 L-86.60,50.00 L0.00,100.00"/><path d="M0.00,-54.40 L86.60,-4.40 L86.60,50.00 L39.49,77.20"/></g></mask></defs><rect x="-200" y="-200" width="400" height="400" fill="#251097" mask="url(#light-fav2)"/></svg><span>Blog · tupt.dev</span></div>
+      </div>
+      <header class="site" style="border-color:#E5E5E5">
+        <div class="brand"><svg viewBox="-110.6 -124.0 221.2 248.0" class="mk" style="width:34px;height:auto;display:block"><defs><mask id="light-hdr" maskUnits="userSpaceOnUse" x="-200" y="-200" width="400" height="400"><rect x="-200" y="-200" width="400" height="400" fill="#000"/><g fill="none" stroke="#fff" stroke-width="24" stroke-linejoin="round" stroke-linecap="round"><path d="M-86.60,-50.00 L0.00,-100.00 L86.60,-50.00"/><path d="M0.00,-85.60 L0.00,100.00"/><path d="M-86.60,-4.40 L-86.60,50.00 L0.00,100.00"/><path d="M0.00,-54.40 L86.60,-4.40 L86.60,50.00 L39.49,77.20"/></g></mask></defs><rect x="-200" y="-200" width="400" height="400" fill="#251097" mask="url(#light-hdr)"/></svg><span style="color:#1F1F1F">tupt.dev</span></div>
+        <nav style="color:#616161"><span>Blog</span><span>Dự án</span><span>Giới thiệu</span></nav>
+      </header>
+      <div class="hero-mock">
+        <svg viewBox="-110.6 -124.0 221.2 248.0" class="mk" style="width:150px;height:auto;display:block"><defs><mask id="light-big" maskUnits="userSpaceOnUse" x="-200" y="-200" width="400" height="400"><rect x="-200" y="-200" width="400" height="400" fill="#000"/><g fill="none" stroke="#fff" stroke-width="24" stroke-linejoin="round" stroke-linecap="round"><path d="M-86.60,-50.00 L0.00,-100.00 L86.60,-50.00"/><path d="M0.00,-85.60 L0.00,100.00"/><path d="M-86.60,-4.40 L-86.60,50.00 L0.00,100.00"/><path d="M0.00,-54.40 L86.60,-4.40 L86.60,50.00 L39.49,77.20"/></g></mask></defs><rect x="-200" y="-200" width="400" height="400" fill="#251097" mask="url(#light-big)"/></svg>
+        <div class="swatches">
+          <div><i style="background:#251097"></i><code>#251097</code><small style="color:#616161">Logo</small></div>
+          <div><i style="background:#FFFFFF;outline:1px solid #E5E5E5"></i><code>#FFFFFF</code><small style="color:#616161">Nền</small></div>
+        </div>
+      </div>
+      <div class="icons" style="border-color:#E5E5E5">
+        <div class="appicon" style="background:#251097;"><svg viewBox="-110.6 -124.0 221.2 248.0" class="mk" style="width:46px;height:auto;display:block"><defs><mask id="light-app" maskUnits="userSpaceOnUse" x="-200" y="-200" width="400" height="400"><rect x="-200" y="-200" width="400" height="400" fill="#000"/><g fill="none" stroke="#fff" stroke-width="24" stroke-linejoin="round" stroke-linecap="round"><path d="M-86.60,-50.00 L0.00,-100.00 L86.60,-50.00"/><path d="M0.00,-85.60 L0.00,100.00"/><path d="M-86.60,-4.40 L-86.60,50.00 L0.00,100.00"/><path d="M0.00,-54.40 L86.60,-4.40 L86.60,50.00 L39.49,77.20"/></g></mask></defs><rect x="-200" y="-200" width="400" height="400" fill="#FFFFFF" mask="url(#light-app)"/></svg></div>
+        <div class="sizes-row"><svg viewBox="-110.6 -124.0 221.2 248.0" class="mk" style="width:64px;height:auto;display:block"><defs><mask id="light-64" maskUnits="userSpaceOnUse" x="-200" y="-200" width="400" height="400"><rect x="-200" y="-200" width="400" height="400" fill="#000"/><g fill="none" stroke="#fff" stroke-width="24" stroke-linejoin="round" stroke-linecap="round"><path d="M-86.60,-50.00 L0.00,-100.00 L86.60,-50.00"/><path d="M0.00,-85.60 L0.00,100.00"/><path d="M-86.60,-4.40 L-86.60,50.00 L0.00,100.00"/><path d="M0.00,-54.40 L86.60,-4.40 L86.60,50.00 L39.49,77.20"/></g></mask></defs><rect x="-200" y="-200" width="400" height="400" fill="#251097" mask="url(#light-64)"/></svg><svg viewBox="-110.6 -124.0 221.2 248.0" class="mk" style="width:32px;height:auto;display:block"><defs><mask id="light-32" maskUnits="userSpaceOnUse" x="-200" y="-200" width="400" height="400"><rect x="-200" y="-200" width="400" height="400" fill="#000"/><g fill="none" stroke="#fff" stroke-width="24" stroke-linejoin="round" stroke-linecap="round"><path d="M-86.60,-50.00 L0.00,-100.00 L86.60,-50.00"/><path d="M0.00,-85.60 L0.00,100.00"/><path d="M-86.60,-4.40 L-86.60,50.00 L0.00,100.00"/><path d="M0.00,-54.40 L86.60,-4.40 L86.60,50.00 L39.49,77.20"/></g></mask></defs><rect x="-200" y="-200" width="400" height="400" fill="#251097" mask="url(#light-32)"/></svg><svg viewBox="-110.6 -124.0 221.2 248.0" class="mk" style="width:16px;height:auto;display:block"><defs><mask id="light-16" maskUnits="userSpaceOnUse" x="-200" y="-200" width="400" height="400"><rect x="-200" y="-200" width="400" height="400" fill="#000"/><g fill="none" stroke="#fff" stroke-width="24" stroke-linejoin="round" stroke-linecap="round"><path d="M-86.60,-50.00 L0.00,-100.00 L86.60,-50.00"/><path d="M0.00,-85.60 L0.00,100.00"/><path d="M-86.60,-4.40 L-86.60,50.00 L0.00,100.00"/><path d="M0.00,-54.40 L86.60,-4.40 L86.60,50.00 L39.49,77.20"/></g></mask></defs><rect x="-200" y="-200" width="400" height="400" fill="#251097" mask="url(#light-16)"/></svg></div>
+      </div>
+    </div>
+  </section>
+  <section class="mode">
+    <div class="mode-head"><h2>Dark mode</h2><span class="muted">Nền #1E1E1E · logo #8B7CFF · tương phản 5,1 : 1</span></div>
+    <div class="mock" style="background:#1E1E1E;border-color:#2B2B2B;color:#CCCCCC">
+      <div class="tabs" style="background:#181818;border-color:#2B2B2B">
+        <div class="tab" style="background:#1E1E1E;color:#CCCCCC"><svg viewBox="-110.6 -124.0 221.2 248.0" class="mk" style="width:16px;height:auto;display:block"><defs><mask id="dark-fav" maskUnits="userSpaceOnUse" x="-200" y="-200" width="400" height="400"><rect x="-200" y="-200" width="400" height="400" fill="#000"/><g fill="none" stroke="#fff" stroke-width="24" stroke-linejoin="round" stroke-linecap="round"><path d="M-86.60,-50.00 L0.00,-100.00 L86.60,-50.00"/><path d="M0.00,-85.60 L0.00,100.00"/><path d="M-86.60,-4.40 L-86.60,50.00 L0.00,100.00"/><path d="M0.00,-54.40 L86.60,-4.40 L86.60,50.00 L39.49,77.20"/></g></mask></defs><rect x="-200" y="-200" width="400" height="400" fill="#8B7CFF" mask="url(#dark-fav)"/></svg><span>tupt.dev</span></div>
+        <div class="tab dim" style="color:#9D9D9D"><svg viewBox="-110.6 -124.0 221.2 248.0" class="mk" style="width:16px;height:auto;display:block"><defs><mask id="dark-fav2" maskUnits="userSpaceOnUse" x="-200" y="-200" width="400" height="400"><rect x="-200" y="-200" width="400" height="400" fill="#000"/><g fill="none" stroke="#fff" stroke-width="24" stroke-linejoin="round" stroke-linecap="round"><path d="M-86.60,-50.00 L0.00,-100.00 L86.60,-50.00"/><path d="M0.00,-85.60 L0.00,100.00"/><path d="M-86.60,-4.40 L-86.60,50.00 L0.00,100.00"/><path d="M0.00,-54.40 L86.60,-4.40 L86.60,50.00 L39.49,77.20"/></g></mask></defs><rect x="-200" y="-200" width="400" height="400" fill="#8B7CFF" mask="url(#dark-fav2)"/></svg><span>Blog · tupt.dev</span></div>
+      </div>
+      <header class="site" style="border-color:#2B2B2B">
+        <div class="brand"><svg viewBox="-110.6 -124.0 221.2 248.0" class="mk" style="width:34px;height:auto;display:block"><defs><mask id="dark-hdr" maskUnits="userSpaceOnUse" x="-200" y="-200" width="400" height="400"><rect x="-200" y="-200" width="400" height="400" fill="#000"/><g fill="none" stroke="#fff" stroke-width="24" stroke-linejoin="round" stroke-linecap="round"><path d="M-86.60,-50.00 L0.00,-100.00 L86.60,-50.00"/><path d="M0.00,-85.60 L0.00,100.00"/><path d="M-86.60,-4.40 L-86.60,50.00 L0.00,100.00"/><path d="M0.00,-54.40 L86.60,-4.40 L86.60,50.00 L39.49,77.20"/></g></mask></defs><rect x="-200" y="-200" width="400" height="400" fill="#8B7CFF" mask="url(#dark-hdr)"/></svg><span style="color:#CCCCCC">tupt.dev</span></div>
+        <nav style="color:#9D9D9D"><span>Blog</span><span>Dự án</span><span>Giới thiệu</span></nav>
+      </header>
+      <div class="hero-mock">
+        <svg viewBox="-110.6 -124.0 221.2 248.0" class="mk" style="width:150px;height:auto;display:block"><defs><mask id="dark-big" maskUnits="userSpaceOnUse" x="-200" y="-200" width="400" height="400"><rect x="-200" y="-200" width="400" height="400" fill="#000"/><g fill="none" stroke="#fff" stroke-width="24" stroke-linejoin="round" stroke-linecap="round"><path d="M-86.60,-50.00 L0.00,-100.00 L86.60,-50.00"/><path d="M0.00,-85.60 L0.00,100.00"/><path d="M-86.60,-4.40 L-86.60,50.00 L0.00,100.00"/><path d="M0.00,-54.40 L86.60,-4.40 L86.60,50.00 L39.49,77.20"/></g></mask></defs><rect x="-200" y="-200" width="400" height="400" fill="#8B7CFF" mask="url(#dark-big)"/></svg>
+        <div class="swatches">
+          <div><i style="background:#8B7CFF"></i><code>#8B7CFF</code><small style="color:#9D9D9D">Logo</small></div>
+          <div><i style="background:#1E1E1E;outline:1px solid #2B2B2B"></i><code>#1E1E1E</code><small style="color:#9D9D9D">Nền</small></div>
+        </div>
+      </div>
+      <div class="icons" style="border-color:#2B2B2B">
+        <div class="appicon" style="background:#1E1E1E;outline:1px solid #2B2B2B"><svg viewBox="-110.6 -124.0 221.2 248.0" class="mk" style="width:46px;height:auto;display:block"><defs><mask id="dark-app" maskUnits="userSpaceOnUse" x="-200" y="-200" width="400" height="400"><rect x="-200" y="-200" width="400" height="400" fill="#000"/><g fill="none" stroke="#fff" stroke-width="24" stroke-linejoin="round" stroke-linecap="round"><path d="M-86.60,-50.00 L0.00,-100.00 L86.60,-50.00"/><path d="M0.00,-85.60 L0.00,100.00"/><path d="M-86.60,-4.40 L-86.60,50.00 L0.00,100.00"/><path d="M0.00,-54.40 L86.60,-4.40 L86.60,50.00 L39.49,77.20"/></g></mask></defs><rect x="-200" y="-200" width="400" height="400" fill="#8B7CFF" mask="url(#dark-app)"/></svg></div>
+        <div class="sizes-row"><svg viewBox="-110.6 -124.0 221.2 248.0" class="mk" style="width:64px;height:auto;display:block"><defs><mask id="dark-64" maskUnits="userSpaceOnUse" x="-200" y="-200" width="400" height="400"><rect x="-200" y="-200" width="400" height="400" fill="#000"/><g fill="none" stroke="#fff" stroke-width="24" stroke-linejoin="round" stroke-linecap="round"><path d="M-86.60,-50.00 L0.00,-100.00 L86.60,-50.00"/><path d="M0.00,-85.60 L0.00,100.00"/><path d="M-86.60,-4.40 L-86.60,50.00 L0.00,100.00"/><path d="M0.00,-54.40 L86.60,-4.40 L86.60,50.00 L39.49,77.20"/></g></mask></defs><rect x="-200" y="-200" width="400" height="400" fill="#8B7CFF" mask="url(#dark-64)"/></svg><svg viewBox="-110.6 -124.0 221.2 248.0" class="mk" style="width:32px;height:auto;display:block"><defs><mask id="dark-32" maskUnits="userSpaceOnUse" x="-200" y="-200" width="400" height="400"><rect x="-200" y="-200" width="400" height="400" fill="#000"/><g fill="none" stroke="#fff" stroke-width="24" stroke-linejoin="round" stroke-linecap="round"><path d="M-86.60,-50.00 L0.00,-100.00 L86.60,-50.00"/><path d="M0.00,-85.60 L0.00,100.00"/><path d="M-86.60,-4.40 L-86.60,50.00 L0.00,100.00"/><path d="M0.00,-54.40 L86.60,-4.40 L86.60,50.00 L39.49,77.20"/></g></mask></defs><rect x="-200" y="-200" width="400" height="400" fill="#8B7CFF" mask="url(#dark-32)"/></svg><svg viewBox="-110.6 -124.0 221.2 248.0" class="mk" style="width:16px;height:auto;display:block"><defs><mask id="dark-16" maskUnits="userSpaceOnUse" x="-200" y="-200" width="400" height="400"><rect x="-200" y="-200" width="400" height="400" fill="#000"/><g fill="none" stroke="#fff" stroke-width="24" stroke-linejoin="round" stroke-linecap="round"><path d="M-86.60,-50.00 L0.00,-100.00 L86.60,-50.00"/><path d="M0.00,-85.60 L0.00,100.00"/><path d="M-86.60,-4.40 L-86.60,50.00 L0.00,100.00"/><path d="M0.00,-54.40 L86.60,-4.40 L86.60,50.00 L39.49,77.20"/></g></mask></defs><rect x="-200" y="-200" width="400" height="400" fill="#8B7CFF" mask="url(#dark-16)"/></svg></div>
+      </div>
+    </div>
+  </section>
+  </div>
+  <section class="ask">
+    <h3>Các file đã thêm vào logo-arrow</h3>
+    <ul>
+      <li><code>tus-logo-dark.svg</code> và <code>png/tus-logo-dark-*.png</code>: logo cho nền tối.</li>
+      <li><code>tus-logo-auto.svg</code> và <code>favicon/favicon.svg</code>: tự đổi màu theo chế độ sáng hoặc tối của máy người xem.</li>
+      <li><code>favicon/favicon-dark-*.png</code> và <code>favicon/icon-512-dark.png</code>: favicon và icon ứng dụng bản tối.</li>
+    </ul>
+  </section>
+</main>

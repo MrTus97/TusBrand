@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="vi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>TUS — ví dụ light/dark</title>
+<!-- favicon tự đổi màu theo chế độ sáng/tối của hệ điều hành -->
+<link rel="icon" href="../logo-arrow/favicon/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="../logo-arrow/favicon/favicon.ico" sizes="48x48">
+<link rel="stylesheet" href="../tokens/colors.css">
+<style>
+  body { margin: 0; background: var(--tus-bg); color: var(--tus-text);
+         font: 16px/1.6 system-ui, -apple-system, "Segoe UI", sans-serif; }
+  header { display: flex; align-items: center; justify-content: space-between; gap: 16px;
+           padding: 14px 24px; border-bottom: 1px solid var(--tus-border); background: var(--tus-surface); }
+  .brand { display: flex; align-items: center; gap: 10px; font-weight: 600; color: var(--tus-text); text-decoration: none; }
+  .logo { color: var(--tus-logo); display: block; }       /* logo dùng currentColor */
+  nav { display: flex; gap: 18px; color: var(--tus-muted); }
+  button { font: inherit; color: var(--tus-text); background: var(--tus-bg); border: 1px solid var(--tus-border);
+           border-radius: 6px; padding: 6px 12px; cursor: pointer; }
+  main { max-width: 760px; margin: 0 auto; padding: 48px 24px; display: flex; flex-direction: column; gap: 32px; }
+  .hero { display: flex; align-items: center; gap: 32px; flex-wrap: wrap; }
+  .swatches { display: grid; grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); gap: 12px; }
+  .sw { border: 1px solid var(--tus-border); border-radius: 8px; overflow: hidden; }
+  .sw i { display: block; height: 48px; }
+  .sw div { padding: 8px 10px; font-size: 13px; }
+  .sw code { color: var(--tus-muted); }
+  .app { width: 88px; height: 88px; border-radius: 20px; display: grid; place-items: center;
+          background: var(--tus-brand); color: var(--tus-on-brand); }
+  :root[data-theme="dark"] .app { background: var(--tus-bg); outline: 1px solid var(--tus-border); }
+  @media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) .app { background: var(--tus-bg); outline: 1px solid var(--tus-border); } }
+  .app .logo { color: inherit; }
+  pre { background: var(--tus-surface); border: 1px solid var(--tus-border); border-radius: 8px; padding: 14px; overflow-x: auto; font-size: 13px; }
+</style>
+</head>
+<body>
+<header>
+  <a class="brand" href="#"><span class="logo"><svg viewBox="-100.6 -114 201.2 228" width="30" height="34" role="img" aria-label="TUS"><defs><mask id="hdr" maskUnits="userSpaceOnUse" x="-200" y="-200" width="400" height="400"><rect x="-200" y="-200" width="400" height="400" fill="#000"/><g fill="none" stroke="#fff" stroke-width="24" stroke-linejoin="round" stroke-linecap="round"><path d="M-86.60,-50.00 L0.00,-100.00 L86.60,-50.00"/><path d="M0.00,-85.60 L0.00,100.00"/><path d="M-86.60,-4.40 L-86.60,50.00 L0.00,100.00"/><path d="M0.00,-54.40 L86.60,-4.40 L86.60,50.00 L39.49,77.20"/></g></mask></defs><rect x="-200" y="-200" width="400" height="400" fill="currentColor" mask="url(#hdr)"/></svg></span>tupt.dev</a>
+  <nav><span>Blog</span><span>Dự án</span><span>Giới thiệu</span></nav>
+  <button id="theme" type="button">Theme: hệ thống</button>
+</header>
+<main>
+  <section class="hero">
+    <span class="logo"><svg viewBox="-100.6 -114 201.2 228" width="140" height="159" role="img" aria-label="TUS"><defs><mask id="big" maskUnits="userSpaceOnUse" x="-200" y="-200" width="400" height="400"><rect x="-200" y="-200" width="400" height="400" fill="#000"/><g fill="none" stroke="#fff" stroke-width="24" stroke-linejoin="round" stroke-linecap="round"><path d="M-86.60,-50.00 L0.00,-100.00 L86.60,-50.00"/><path d="M0.00,-85.60 L0.00,100.00"/><path d="M-86.60,-4.40 L-86.60,50.00 L0.00,100.00"/><path d="M0.00,-54.40 L86.60,-4.40 L86.60,50.00 L39.49,77.20"/></g></mask></defs><rect x="-200" y="-200" width="400" height="400" fill="currentColor" mask="url(#big)"/></svg></span>
+    <div class="app"><span class="logo"><svg viewBox="-100.6 -114 201.2 228" width="50" height="57" role="img" aria-label="TUS"><defs><mask id="app" maskUnits="userSpaceOnUse" x="-200" y="-200" width="400" height="400"><rect x="-200" y="-200" width="400" height="400" fill="#000"/><g fill="none" stroke="#fff" stroke-width="24" stroke-linejoin="round" stroke-linecap="round"><path d="M-86.60,-50.00 L0.00,-100.00 L86.60,-50.00"/><path d="M0.00,-85.60 L0.00,100.00"/><path d="M-86.60,-4.40 L-86.60,50.00 L0.00,100.00"/><path d="M0.00,-54.40 L86.60,-4.40 L86.60,50.00 L39.49,77.20"/></g></mask></defs><rect x="-200" y="-200" width="400" height="400" fill="currentColor" mask="url(#app)"/></svg></span></div>
+  </section>
+
+  <section>
+    <h2>Bảng màu đang dùng</h2>
+    <div class="swatches">
+      <div class="sw"><i style="background:var(--tus-logo)"></i><div>Logo<br><code>--tus-logo</code></div></div>
+      <div class="sw"><i style="background:var(--tus-bg)"></i><div>Nền<br><code>--tus-bg</code></div></div>
+      <div class="sw"><i style="background:var(--tus-surface)"></i><div>Bề mặt phụ<br><code>--tus-surface</code></div></div>
+      <div class="sw"><i style="background:var(--tus-border)"></i><div>Viền<br><code>--tus-border</code></div></div>
+      <div class="sw"><i style="background:var(--tus-text)"></i><div>Chữ<br><code>--tus-text</code></div></div>
+      <div class="sw"><i style="background:var(--tus-muted)"></i><div>Chữ phụ<br><code>--tus-muted</code></div></div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Cách 2: đổi ảnh logo theo theme</h2>
+    <p>Khi không nhúng SVG trực tiếp, đặt hai ảnh và ẩn/hiện theo theme:</p>
+    <pre>&lt;img src="/static/images/tus-logo.svg" class="block dark:hidden" alt="tupt.dev"&gt;
+&lt;img src="/static/images/tus-logo-dark.svg" class="hidden dark:block" alt="tupt.dev"&gt;</pre>
+  </section>
+</main>
+<script>
+  // Nút chuyển theme: hệ thống -> sáng -> tối
+  const modes = ['system', 'light', 'dark'];
+  const label = { system: 'hệ thống', light: 'sáng', dark: 'tối' };
+  const btn = document.getElementById('theme');
+  let i = 0;
+  btn.addEventListener('click', () => {
+    i = (i + 1) % modes.length;
+    const m = modes[i];
+    if (m === 'system') document.documentElement.removeAttribute('data-theme');
+    else document.documentElement.setAttribute('data-theme', m);
+    btn.textContent = 'Theme: ' + label[m];
+  });
+</script>
+</body>
+</html>

@@ -1,0 +1,152 @@
+<title>Tus Logo Vòng 4</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lexend:wght@500;600&family=Be+Vietnam+Pro:wght@400;500;600&display=swap">
+<style>
+/* Layout: một cột; logo chính là thứ lớn nhất, phần giải thích và phương án phụ nhỏ dần xuống dưới. */
+:root{
+  --paper:#F4F5F6; --card:#FFFFFF; --ink:#15171A; --muted:#5D636B; --line:#D9DCE0;
+  --c1:#D9480F; --c2:#1C7ED6; --c3:#2F9E44;
+  --display:"Lexend","Be Vietnam Pro",system-ui,sans-serif;
+  --body:"Be Vietnam Pro",system-ui,-apple-system,"Segoe UI",sans-serif;
+}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
+  --paper:#111316; --card:#191C20; --ink:#ECEEF1; --muted:#9BA2AA; --line:#2B3036;
+  --c1:#FF8A50; --c2:#6CB2FF; --c3:#69DB7C; color-scheme:dark}}
+:root[data-theme="dark"]{--paper:#111316; --card:#191C20; --ink:#ECEEF1; --muted:#9BA2AA; --line:#2B3036;
+  --c1:#FF8A50; --c2:#6CB2FF; --c3:#69DB7C; color-scheme:dark}
+
+body{background:var(--paper);color:var(--ink);font-family:var(--body);font-size:16px;line-height:1.6}
+.wrap{max-width:980px;margin:0 auto;padding-block:48px 80px;
+  padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));
+  display:flex;flex-direction:column;gap:56px}
+h1,h2,h3{font-family:var(--display);font-weight:600;line-height:1.2;text-wrap:balance;margin:0}
+h1{font-size:clamp(28px,5vw,40px)} h2{font-size:24px} h3{font-size:17px}
+p{margin:0;max-width:68ch}
+.muted{color:var(--muted)}
+section{display:flex;flex-direction:column;gap:20px}
+.intro{display:flex;flex-direction:column;gap:12px}
+
+.board{background:var(--card);border:1px solid var(--line);border-radius:6px;padding:clamp(24px,6vw,56px);display:flex;justify-content:center;align-items:center;min-width:0}
+.board > svg{width:100%;height:auto;color:var(--ink)}
+.hero > svg{max-width:420px}
+.pair{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.inv{background:var(--ink)} .inv > svg{color:var(--paper)}
+.pair .board > svg{max-width:300px}
+.diagram > svg{max-width:560px}
+.lab{font-family:var(--body);font-size:10px;fill:var(--muted)}
+.lk{font-family:var(--display);font-weight:600;font-size:12px}
+.lab:nth-of-type(1) .lk{fill:var(--c1)} .lab:nth-of-type(2) .lk{fill:var(--c2)} .lab:nth-of-type(3) .lk{fill:var(--c3)}
+
+.alts{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:16px}
+.alts figure{margin:0;display:flex;flex-direction:column;gap:10px}
+.alts .board > svg{max-width:170px}
+.alts figcaption{font-size:14px;color:var(--muted)}
+.alts figcaption b{color:var(--ink);font-weight:600;display:block}
+
+.sizes{display:flex;flex-wrap:wrap;align-items:flex-end;gap:28px}
+.sizes figure{margin:0;display:flex;flex-direction:column;align-items:center;gap:8px}
+.sizes figcaption{font-size:13px;color:var(--muted);font-variant-numeric:tabular-nums}
+.tile{background:var(--ink);display:grid;place-items:center}
+.tile svg{color:var(--paper)}
+.sizes .plain{color:var(--ink)}
+.tab{display:flex;align-items:center;gap:8px;background:var(--paper);border:1px solid var(--line);border-radius:8px 8px 0 0;padding:8px 14px;font-size:13px}
+
+.lockups{display:flex;flex-direction:column;gap:32px;width:100%}
+.lockups svg{height:clamp(52px,11vw,84px);width:auto;max-width:100%;color:var(--ink);display:block}
+
+.ask{background:var(--card);border:1px solid var(--line);border-radius:6px;padding:24px clamp(20px,4vw,32px)}
+.ask ol{margin:12px 0 0;padding-left:20px;display:flex;flex-direction:column;gap:8px}
+@media (max-width:640px){.pair{grid-template-columns:1fr}}
+</style>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true"><defs><mask id="m-tus" maskUnits="userSpaceOnUse" x="-40" y="-40" width="260" height="260"><rect x="-40" y="-40" width="260" height="260" fill="#000"/><circle cx="92" cy="84" r="46" fill="white"/><path d="M50,108 Q52,150 44,176 H140 Q128,140 134,104 Z" fill="white"/><circle cx="64" cy="42" r="12" fill="white"/><circle cx="84" cy="31" r="16" fill="white"/><circle cx="106" cy="32" r="15" fill="white"/><circle cx="124" cy="45" r="11" fill="white"/><path d="M62,64 Q44,68 28,84 L62,100 Z" fill="white" stroke="white" stroke-width="3" stroke-linejoin="round"/><path d="M50,93 C38,98 33,118 41,126 C47,131 53,124 53,112 C53,104 54,98 56,95 Z" fill="white"/><circle cx="82" cy="61" r="5" fill="black"/><path d="M22,84 H98 M60,84 V140" fill="none" stroke="black" stroke-width="9" stroke-linecap="round" stroke-linejoin="round"/><path d="M73,100 V125 A12,12 0 0 0 97,125 V100" fill="none" stroke="black" stroke-width="9" stroke-linecap="round" stroke-linejoin="round"/><path d="M120.8,103.1 A9.5,9.5 0 1 0 113,118.0 A10.5,10.5 0 1 1 103.9,133.8" fill="none" stroke="black" stroke-width="9" stroke-linecap="round" stroke-linejoin="round"/></mask><symbol id="tus" viewBox="8 10 140 168"><rect x="-40" y="-40" width="260" height="260" fill="currentColor" mask="url(#m-tus)"/></symbol><mask id="m-tus-light" maskUnits="userSpaceOnUse" x="-40" y="-40" width="260" height="260"><rect x="-40" y="-40" width="260" height="260" fill="#000"/><circle cx="92" cy="84" r="46" fill="white"/><path d="M50,108 Q52,150 44,176 H140 Q128,140 134,104 Z" fill="white"/><circle cx="64" cy="42" r="12" fill="white"/><circle cx="84" cy="31" r="16" fill="white"/><circle cx="106" cy="32" r="15" fill="white"/><circle cx="124" cy="45" r="11" fill="white"/><path d="M62,64 Q44,68 28,84 L62,100 Z" fill="white" stroke="white" stroke-width="3" stroke-linejoin="round"/><path d="M50,93 C38,98 33,118 41,126 C47,131 53,124 53,112 C53,104 54,98 56,95 Z" fill="white"/><circle cx="82" cy="61" r="5" fill="black"/><path d="M22,84 H98 M60,84 V140" fill="none" stroke="black" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/><path d="M73,100 V125 A12,12 0 0 0 97,125 V100" fill="none" stroke="black" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/><path d="M120.8,103.1 A9.5,9.5 0 1 0 113,118.0 A10.5,10.5 0 1 1 103.9,133.8" fill="none" stroke="black" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/></mask><symbol id="tus-light" viewBox="8 10 140 168"><rect x="-40" y="-40" width="260" height="260" fill="currentColor" mask="url(#m-tus-light)"/></symbol><mask id="m-tus-asym" maskUnits="userSpaceOnUse" x="-40" y="-40" width="260" height="260"><rect x="-40" y="-40" width="260" height="260" fill="#000"/><circle cx="92" cy="84" r="46" fill="white"/><path d="M50,108 Q52,150 44,176 H140 Q128,140 134,104 Z" fill="white"/><circle cx="64" cy="42" r="12" fill="white"/><circle cx="84" cy="31" r="16" fill="white"/><circle cx="106" cy="32" r="15" fill="white"/><circle cx="124" cy="45" r="11" fill="white"/><path d="M62,64 Q44,68 28,84 L62,100 Z" fill="white" stroke="white" stroke-width="3" stroke-linejoin="round"/><path d="M50,93 C38,98 33,118 41,126 C47,131 53,124 53,112 C53,104 54,98 56,95 Z" fill="white"/><circle cx="82" cy="61" r="5" fill="black"/><path d="M22,84 H84 M60,84 V140" fill="none" stroke="black" stroke-width="9" stroke-linecap="round" stroke-linejoin="round"/><path d="M73,100 V125 A12,12 0 0 0 97,125 V100" fill="none" stroke="black" stroke-width="9" stroke-linecap="round" stroke-linejoin="round"/><path d="M120.8,103.1 A9.5,9.5 0 1 0 113,118.0 A10.5,10.5 0 1 1 103.9,133.8" fill="none" stroke="black" stroke-width="9" stroke-linecap="round" stroke-linejoin="round"/></mask><symbol id="tus-asym" viewBox="8 10 140 168"><rect x="-40" y="-40" width="260" height="260" fill="currentColor" mask="url(#m-tus-asym)"/></symbol><mask id="m-tus-icon" maskUnits="userSpaceOnUse" x="-40" y="-40" width="260" height="260"><rect x="-40" y="-40" width="260" height="260" fill="#000"/><circle cx="92" cy="84" r="46" fill="white"/><path d="M50,108 Q52,150 44,176 H140 Q128,140 134,104 Z" fill="white"/><circle cx="64" cy="42" r="12" fill="white"/><circle cx="84" cy="31" r="16" fill="white"/><circle cx="106" cy="32" r="15" fill="white"/><circle cx="124" cy="45" r="11" fill="white"/><path d="M62,64 Q44,68 28,84 L62,100 Z" fill="white" stroke="white" stroke-width="3" stroke-linejoin="round"/><path d="M50,93 C38,98 33,118 41,126 C47,131 53,124 53,112 C53,104 54,98 56,95 Z" fill="white"/><circle cx="82" cy="61" r="5" fill="black"/></mask><symbol id="tus-icon" viewBox="8 10 140 168"><rect x="-40" y="-40" width="260" height="260" fill="currentColor" mask="url(#m-tus-icon)"/></symbol></defs></svg>
+
+<main class="wrap">
+  <header class="intro">
+    <h1>Logo Tus, vòng 4</h1>
+    <p class="muted">Chỉ còn đầu gà trống, nhìn sang trái, với mào răng cưa, mỏ và yếm. Chữ Tus được khoét trắng vào khối đầu và ăn khớp với các bộ phận. Thanh ngang chữ T chạy xuyên qua mỏ thành khe miệng, nét đứng đi xuống cổ, còn chữ u và chữ s nằm ở má và gáy.</p>
+  </header>
+
+  <section>
+    <div class="board hero"><svg viewBox="8 10 140 168" role="img" aria-label="Logo Tus: đầu gà trống có chữ Tus"><use href="#tus" x="8" y="10" width="140" height="168"/></svg></div>
+    <div class="pair">
+      <div class="board inv"><svg viewBox="8 10 140 168" role="img" aria-label="Logo Tus trên nền tối"><use href="#tus" x="8" y="10" width="140" height="168"/></svg></div>
+      <div class="board"><svg viewBox="8 10 140 168" role="img" aria-label="Sơ đồ: vị trí chữ T, u, s trong đầu gà"><mask id="dg" maskUnits="userSpaceOnUse" x="-40" y="-40" width="260" height="260"><rect x="-40" y="-40" width="260" height="260" fill="#000"/><circle cx="92" cy="84" r="46" fill="white"/><path d="M50,108 Q52,150 44,176 H140 Q128,140 134,104 Z" fill="white"/><circle cx="64" cy="42" r="12" fill="white"/><circle cx="84" cy="31" r="16" fill="white"/><circle cx="106" cy="32" r="15" fill="white"/><circle cx="124" cy="45" r="11" fill="white"/><path d="M62,64 Q44,68 28,84 L62,100 Z" fill="white" stroke="white" stroke-width="3" stroke-linejoin="round"/><path d="M50,93 C38,98 33,118 41,126 C47,131 53,124 53,112 C53,104 54,98 56,95 Z" fill="white"/><circle cx="82" cy="61" r="5" fill="black"/></mask><rect x="-40" y="-40" width="260" height="260" fill="var(--line)" mask="url(#dg)"/><path d="M22,84 H98 M60,84 V140" fill="none" stroke="var(--c1)" stroke-width="9" stroke-linecap="round" stroke-linejoin="round"/><path d="M73,100 V125 A12,12 0 0 0 97,125 V100" fill="none" stroke="var(--c2)" stroke-width="9" stroke-linecap="round" stroke-linejoin="round"/><path d="M120.8,103.1 A9.5,9.5 0 1 0 113,118.0 A10.5,10.5 0 1 1 103.9,133.8" fill="none" stroke="var(--c3)" stroke-width="9" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+    </div>
+    <p class="muted">Ô bên phải tô màu từng chữ trên nền khối đầu gà: cam là T, xanh dương là u, xanh lá là s.</p>
+  </section>
+
+  <section>
+    <h2>Biến thể để so sánh</h2>
+    <div class="alts">
+      <figure><div class="board"><svg viewBox="8 10 140 168" role="img" aria-label="Biến thể nét mảnh"><use href="#tus-light" x="8" y="10" width="140" height="168"/></svg></div>
+        <figcaption><b>Nét chữ mảnh</b>Khối đầu gà nổi hơn, chữ thanh hơn nhưng nhỏ thì khó đọc.</figcaption></figure>
+      <figure><div class="board"><svg viewBox="8 10 140 168" role="img" aria-label="Biến thể chữ T lệch"><use href="#tus-asym" x="8" y="10" width="140" height="168"/></svg></div>
+        <figcaption><b>Chữ T ngắn bên phải</b>Thanh ngang chỉ dài về phía mỏ, nhấn mạnh khe miệng hơn.</figcaption></figure>
+      <figure><div class="board"><svg viewBox="8 10 140 168" role="img" aria-label="Đầu gà không chữ"><use href="#tus-icon" x="8" y="10" width="140" height="168"/></svg></div>
+        <figcaption><b>Đầu gà không chữ</b>Dùng cho favicon và chỗ quá nhỏ, nơi chữ không còn đọc được.</figcaption></figure>
+    </div>
+  </section>
+
+  <section>
+    <h2>Ở kích thước nhỏ</h2>
+    <div class="board" style="justify-content:flex-start">
+      <div class="sizes">
+        <figure><div class="tile" style="width:160px;height:160px;border-radius:32px"><svg viewBox="8 10 140 168" width="112"><use href="#tus" x="8" y="10" width="140" height="168"/></svg></div><figcaption>App icon</figcaption></figure>
+        <figure><div class="tile" style="width:112px;height:112px;border-radius:50%"><svg viewBox="8 10 140 168" width="70"><use href="#tus" x="8" y="10" width="140" height="168"/></svg></div><figcaption>Avatar</figcaption></figure>
+        <figure><svg class="plain" viewBox="8 10 140 168" width="64"><use href="#tus" x="8" y="10" width="140" height="168"/></svg><figcaption>64px</figcaption></figure>
+        <figure><svg class="plain" viewBox="8 10 140 168" width="32"><use href="#tus-icon" x="8" y="10" width="140" height="168"/></svg><figcaption>32px, không chữ</figcaption></figure>
+        <figure><svg class="plain" viewBox="8 10 140 168" width="16"><use href="#tus-icon" x="8" y="10" width="140" height="168"/></svg><figcaption>16px, không chữ</figcaption></figure>
+        <figure><div class="tab"><svg class="plain" viewBox="8 10 140 168" width="18"><use href="#tus-icon" x="8" y="10" width="140" height="168"/></svg>tus.com</div><figcaption>Tab trình duyệt</figcaption></figure>
+      </div>
+    </div>
+    <p class="muted">Từ 64px trở lên dùng bản có chữ. Nhỏ hơn thì dùng đầu gà không chữ: dáng mào và mỏ vẫn nhận ra ở 16px.</p>
+  </section>
+
+  <section>
+    <h2>Hệ thống sản phẩm</h2>
+    <p class="muted">Tên sản phẩm đứng trước, đầu gà Tus đứng sau và giữ nguyên.</p>
+    <div class="board" style="justify-content:flex-start"><div class="lockups" id="lockups"></div></div>
+  </section>
+
+  <section class="ask">
+    <h3>Bạn xem giúp tôi</h3>
+    <ol>
+      <li>Đầu gà và chữ Tus giờ đã ổn chưa?</li>
+      <li>Bạn chọn bản chính hay một trong các biến thể?</li>
+      <li>Nếu chốt hướng này, tôi sẽ tinh chỉnh độ cong của mào, mỏ, cổ và xuất bộ file SVG/PNG hoàn chỉnh.</li>
+    </ol>
+  </section>
+</main>
+
+<script>
+(function(){
+  const words=["Money","Sale","Infra","Clothes"];
+  const host=document.getElementById("lockups");
+  const NS="http://www.w3.org/2000/svg";
+  const VB="8 10 140 168".split(" ").map(Number);
+  function build(){
+    host.innerHTML="";
+    words.forEach(w=>{
+      const svg=document.createElementNS(NS,"svg");
+      svg.setAttribute("role","img"); svg.setAttribute("aria-label",w+" Tus");
+      const t=document.createElementNS(NS,"text");
+      t.setAttribute("x","0"); t.setAttribute("y","116");
+      t.setAttribute("font-family","Lexend, Be Vietnam Pro, sans-serif");
+      t.setAttribute("font-weight","500"); t.setAttribute("font-size","64");
+      t.setAttribute("fill","currentColor"); t.textContent=w;
+      svg.appendChild(t); host.appendChild(svg);
+      let tw=0; try{ tw=t.getComputedTextLength(); }catch(e){ tw=w.length*50; }
+      const x0=tw+12, h=130, wdt=h*VB[2]/VB[3];
+      const u=document.createElementNS(NS,"use");
+      u.setAttribute("href","#tus"); u.setAttribute("x",x0); u.setAttribute("y",-13);
+      u.setAttribute("width",wdt); u.setAttribute("height",h);
+      svg.appendChild(u);
+      svg.setAttribute("viewBox","-4 -16 "+(x0+wdt+8)+" 156");
+    });
+  }
+  build();
+  if(document.fonts&&document.fonts.ready){document.fonts.ready.then(build);}
+})();
+</script>

@@ -1,0 +1,131 @@
+<title>Tus Logo Vòng 6</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lexend:wght@500;600&family=Be+Vietnam+Pro:wght@400;500;600&display=swap">
+<style>
+/* Layout: một cột; logo chính là thứ lớn nhất, phần giải thích và phương án phụ nhỏ dần xuống dưới. */
+:root{
+  --paper:#F4F5F6; --card:#FFFFFF; --ink:#15171A; --muted:#5D636B; --line:#D9DCE0;
+  --c1:#D9480F; --c2:#1C7ED6; --c3:#2F9E44;
+  --display:"Lexend","Be Vietnam Pro",system-ui,sans-serif;
+  --body:"Be Vietnam Pro",system-ui,-apple-system,"Segoe UI",sans-serif;
+}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
+  --paper:#111316; --card:#191C20; --ink:#ECEEF1; --muted:#9BA2AA; --line:#2B3036;
+  --c1:#FF8A50; --c2:#6CB2FF; --c3:#69DB7C; color-scheme:dark}}
+:root[data-theme="dark"]{--paper:#111316; --card:#191C20; --ink:#ECEEF1; --muted:#9BA2AA; --line:#2B3036;
+  --c1:#FF8A50; --c2:#6CB2FF; --c3:#69DB7C; color-scheme:dark}
+
+body{background:var(--paper);color:var(--ink);font-family:var(--body);font-size:16px;line-height:1.6}
+.wrap{max-width:980px;margin:0 auto;padding-block:48px 80px;
+  padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));
+  display:flex;flex-direction:column;gap:56px}
+h1,h2,h3{font-family:var(--display);font-weight:600;line-height:1.2;text-wrap:balance;margin:0}
+h1{font-size:clamp(28px,5vw,40px)} h2{font-size:24px} h3{font-size:17px}
+p{margin:0;max-width:68ch}
+.muted{color:var(--muted)}
+section{display:flex;flex-direction:column;gap:20px}
+.intro{display:flex;flex-direction:column;gap:12px}
+
+.board{background:var(--card);border:1px solid var(--line);border-radius:6px;padding:clamp(24px,6vw,56px);display:flex;justify-content:center;align-items:center;min-width:0}
+.board > svg{width:100%;height:auto;color:var(--ink)}
+.hero > svg{max-width:420px}
+.pair{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.inv{background:var(--ink)} .inv > svg{color:var(--paper)}
+.pair .board > svg{max-width:260px}
+.diagram > svg{max-width:560px}
+.lab{font-family:var(--body);font-size:10px;fill:var(--muted)}
+.lk{font-family:var(--display);font-weight:600;font-size:12px}
+.lab:nth-of-type(1) .lk{fill:var(--c1)} .lab:nth-of-type(2) .lk{fill:var(--c2)} .lab:nth-of-type(3) .lk{fill:var(--c3)}
+
+.alts{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:16px}
+.alts figure{margin:0;display:flex;flex-direction:column;gap:10px}
+.alts .board > svg{max-width:200px}
+.alts figcaption{font-size:14px;color:var(--muted)}
+.alts figcaption b{color:var(--ink);font-weight:600;display:block}
+
+.sizes{display:flex;flex-wrap:wrap;align-items:flex-end;gap:28px}
+.sizes figure{margin:0;display:flex;flex-direction:column;align-items:center;gap:8px}
+.sizes figcaption{font-size:13px;color:var(--muted);font-variant-numeric:tabular-nums}
+.tile{background:var(--ink);display:grid;place-items:center}
+.tile svg{color:var(--paper)}
+.sizes .plain{color:var(--ink)}
+.tab{display:flex;align-items:center;gap:8px;background:var(--paper);border:1px solid var(--line);border-radius:8px 8px 0 0;padding:8px 14px;font-size:13px}
+
+.lockups{display:flex;flex-direction:column;gap:32px;width:100%}
+.lockups svg{height:clamp(52px,11vw,84px);width:auto;max-width:100%;color:var(--ink);display:block}
+
+.ask{background:var(--card);border:1px solid var(--line);border-radius:6px;padding:24px clamp(20px,4vw,32px)}
+.ask ol{margin:12px 0 0;padding-left:20px;display:flex;flex-direction:column;gap:8px}
+@media (max-width:640px){.pair{grid-template-columns:1fr}}
+
+.opt{display:flex;flex-direction:column;gap:16px}
+.opt .pair .board > svg{max-width:340px}
+.opt .hero > svg{max-width:520px}
+.strip{display:flex;flex-wrap:wrap;align-items:flex-end;gap:24px}
+.strip figure{margin:0;display:flex;flex-direction:column;gap:6px;align-items:flex-start}
+.strip figcaption{font-size:13px;color:var(--muted)}
+.strip svg{color:var(--ink);display:block}
+</style>
+
+
+<main class="wrap">
+  <header class="intro">
+    <h1>Logo TUS, vòng 6</h1>
+    <p class="muted">Logo đơn giản, không còn con gà. Ba chữ T, U, S được dựng hoàn toàn từ hình khối cơ bản: hình chữ nhật và nửa vành tròn, cùng một độ dày nét. Một số nét được bỏ hoặc cắt rời, nhưng vẫn đọc rõ cả ba chữ.</p>
+  </header>
+
+  <section class="opt">
+    <h2>A. Chung nét</h2>
+    <p class="muted">Chữ T và chữ U dùng chung một nét đứng: nét đứng chữ T cũng là nét trái chữ U, thanh ngang chữ T nằm ngay trên chữ U. Chữ S ghép từ hai nửa vành tròn và hai thanh ngang. Gọn và chắc nhất trong ba bản.</p>
+    <div class="board hero"><svg viewBox="-6 -6 200 112" class="" role="img" aria-label="Logo TUS, A. Chung nét"><g fill="currentColor"><path fill-rule="nonzero" d="M0,0 h70 v20 h-70 Z M25,0 h20 v60 h-20 Z M85,0 h20 v60 h-20 Z M105.00,60.00 A40,40 0 0 1 25.00,60.00 L45.00,60.00 A20,20 0 0 0 85.00,60.00 Z M147.00,60.00 A30.0,30.0 0 0 1 147.00,0.00 L147.00,20.00 A10.0,10.0 0 0 0 147.00,40.00 Z M147.0,0 h40.0 v20 h-40.0 Z M146.99,40.0 h10.02 v20 h-10.02 Z M157.00,40.00 A30.0,30.0 0 0 1 157.00,100.00 L157.00,80.00 A10.0,10.0 0 0 0 157.00,60.00 Z M117,80 h40.0 v20 h-40.0 Z "/></g></svg></div>
+    <div class="pair">
+      <div class="board inv"><svg viewBox="-6 -6 200 112" class="" role="img" aria-label="Logo TUS trên nền tối"><g fill="currentColor"><path fill-rule="nonzero" d="M0,0 h70 v20 h-70 Z M25,0 h20 v60 h-20 Z M85,0 h20 v60 h-20 Z M105.00,60.00 A40,40 0 0 1 25.00,60.00 L45.00,60.00 A20,20 0 0 0 85.00,60.00 Z M147.00,60.00 A30.0,30.0 0 0 1 147.00,0.00 L147.00,20.00 A10.0,10.0 0 0 0 147.00,40.00 Z M147.0,0 h40.0 v20 h-40.0 Z M146.99,40.0 h10.02 v20 h-10.02 Z M157.00,40.00 A30.0,30.0 0 0 1 157.00,100.00 L157.00,80.00 A10.0,10.0 0 0 0 157.00,60.00 Z M117,80 h40.0 v20 h-40.0 Z "/></g></svg></div>
+      <div class="board" style="justify-content:flex-start">
+        <div class="strip">
+          <figure><svg viewBox="-6 -6 200 112" width="160" class="" role="img" aria-label="TUS"><g fill="currentColor"><path fill-rule="nonzero" d="M0,0 h70 v20 h-70 Z M25,0 h20 v60 h-20 Z M85,0 h20 v60 h-20 Z M105.00,60.00 A40,40 0 0 1 25.00,60.00 L45.00,60.00 A20,20 0 0 0 85.00,60.00 Z M147.00,60.00 A30.0,30.0 0 0 1 147.00,0.00 L147.00,20.00 A10.0,10.0 0 0 0 147.00,40.00 Z M147.0,0 h40.0 v20 h-40.0 Z M146.99,40.0 h10.02 v20 h-10.02 Z M157.00,40.00 A30.0,30.0 0 0 1 157.00,100.00 L157.00,80.00 A10.0,10.0 0 0 0 157.00,60.00 Z M117,80 h40.0 v20 h-40.0 Z "/></g></svg><figcaption>160px</figcaption></figure>
+          <figure><svg viewBox="-6 -6 200 112" width="64" class="" role="img" aria-label="TUS"><g fill="currentColor"><path fill-rule="nonzero" d="M0,0 h70 v20 h-70 Z M25,0 h20 v60 h-20 Z M85,0 h20 v60 h-20 Z M105.00,60.00 A40,40 0 0 1 25.00,60.00 L45.00,60.00 A20,20 0 0 0 85.00,60.00 Z M147.00,60.00 A30.0,30.0 0 0 1 147.00,0.00 L147.00,20.00 A10.0,10.0 0 0 0 147.00,40.00 Z M147.0,0 h40.0 v20 h-40.0 Z M146.99,40.0 h10.02 v20 h-10.02 Z M157.00,40.00 A30.0,30.0 0 0 1 157.00,100.00 L157.00,80.00 A10.0,10.0 0 0 0 157.00,60.00 Z M117,80 h40.0 v20 h-40.0 Z "/></g></svg><figcaption>64px</figcaption></figure>
+          <figure><svg viewBox="-6 -6 200 112" width="32" class="" role="img" aria-label="TUS"><g fill="currentColor"><path fill-rule="nonzero" d="M0,0 h70 v20 h-70 Z M25,0 h20 v60 h-20 Z M85,0 h20 v60 h-20 Z M105.00,60.00 A40,40 0 0 1 25.00,60.00 L45.00,60.00 A20,20 0 0 0 85.00,60.00 Z M147.00,60.00 A30.0,30.0 0 0 1 147.00,0.00 L147.00,20.00 A10.0,10.0 0 0 0 147.00,40.00 Z M147.0,0 h40.0 v20 h-40.0 Z M146.99,40.0 h10.02 v20 h-10.02 Z M157.00,40.00 A30.0,30.0 0 0 1 157.00,100.00 L157.00,80.00 A10.0,10.0 0 0 0 157.00,60.00 Z M117,80 h40.0 v20 h-40.0 Z "/></g></svg><figcaption>32px</figcaption></figure>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="opt">
+    <h2>B. Tách khối</h2>
+    <p class="muted">Mỗi chữ được cắt rời thành các khối riêng: thanh ngang và nét đứng chữ T, hai nét đứng và đáy chữ U, hai nửa chữ S. Khe hở giữa các khối là phần nét bị bỏ đi, nhưng mắt vẫn tự nối lại thành chữ.</p>
+    <div class="board hero"><svg viewBox="-6 -6 252 112" class="" role="img" aria-label="Logo TUS, B. Tách khối"><defs><mask id="mk67037832" maskUnits="userSpaceOnUse" x="-6" y="-6" width="252" height="112"><rect x="-6" y="-6" width="252" height="112" fill="#fff"/><path d="M196.0,40 h6 v20 h-6 Z " fill="#000"/></mask></defs><g fill="currentColor" mask="url(#mk67037832)"><path fill-rule="nonzero" d="M0,0 h70 v20 h-70 Z M25,26 h20 v68 h-20 Z M82,0 h20 v59 h-20 Z M132,0 h20 v59 h-20 Z M152.00,65.00 A35,35 0 0 1 82.00,65.00 L102.00,65.00 A15,15 0 0 0 132.00,65.00 Z M194.00,60.00 A30.0,30.0 0 0 1 194.00,0.00 L194.00,20.00 A10.0,10.0 0 0 0 194.00,40.00 Z M194.0,0 h40.0 v20 h-40.0 Z M193.99,40.0 h10.02 v20 h-10.02 Z M204.00,40.00 A30.0,30.0 0 0 1 204.00,100.00 L204.00,80.00 A10.0,10.0 0 0 0 204.00,60.00 Z M164,80 h40.0 v20 h-40.0 Z "/></g></svg></div>
+    <div class="pair">
+      <div class="board inv"><svg viewBox="-6 -6 252 112" class="" role="img" aria-label="Logo TUS trên nền tối"><defs><mask id="mk67037832" maskUnits="userSpaceOnUse" x="-6" y="-6" width="252" height="112"><rect x="-6" y="-6" width="252" height="112" fill="#fff"/><path d="M196.0,40 h6 v20 h-6 Z " fill="#000"/></mask></defs><g fill="currentColor" mask="url(#mk67037832)"><path fill-rule="nonzero" d="M0,0 h70 v20 h-70 Z M25,26 h20 v68 h-20 Z M82,0 h20 v59 h-20 Z M132,0 h20 v59 h-20 Z M152.00,65.00 A35,35 0 0 1 82.00,65.00 L102.00,65.00 A15,15 0 0 0 132.00,65.00 Z M194.00,60.00 A30.0,30.0 0 0 1 194.00,0.00 L194.00,20.00 A10.0,10.0 0 0 0 194.00,40.00 Z M194.0,0 h40.0 v20 h-40.0 Z M193.99,40.0 h10.02 v20 h-10.02 Z M204.00,40.00 A30.0,30.0 0 0 1 204.00,100.00 L204.00,80.00 A10.0,10.0 0 0 0 204.00,60.00 Z M164,80 h40.0 v20 h-40.0 Z "/></g></svg></div>
+      <div class="board" style="justify-content:flex-start">
+        <div class="strip">
+          <figure><svg viewBox="-6 -6 252 112" width="160" class="" role="img" aria-label="TUS"><defs><mask id="mk67037832" maskUnits="userSpaceOnUse" x="-6" y="-6" width="252" height="112"><rect x="-6" y="-6" width="252" height="112" fill="#fff"/><path d="M196.0,40 h6 v20 h-6 Z " fill="#000"/></mask></defs><g fill="currentColor" mask="url(#mk67037832)"><path fill-rule="nonzero" d="M0,0 h70 v20 h-70 Z M25,26 h20 v68 h-20 Z M82,0 h20 v59 h-20 Z M132,0 h20 v59 h-20 Z M152.00,65.00 A35,35 0 0 1 82.00,65.00 L102.00,65.00 A15,15 0 0 0 132.00,65.00 Z M194.00,60.00 A30.0,30.0 0 0 1 194.00,0.00 L194.00,20.00 A10.0,10.0 0 0 0 194.00,40.00 Z M194.0,0 h40.0 v20 h-40.0 Z M193.99,40.0 h10.02 v20 h-10.02 Z M204.00,40.00 A30.0,30.0 0 0 1 204.00,100.00 L204.00,80.00 A10.0,10.0 0 0 0 204.00,60.00 Z M164,80 h40.0 v20 h-40.0 Z "/></g></svg><figcaption>160px</figcaption></figure>
+          <figure><svg viewBox="-6 -6 252 112" width="64" class="" role="img" aria-label="TUS"><defs><mask id="mk67037832" maskUnits="userSpaceOnUse" x="-6" y="-6" width="252" height="112"><rect x="-6" y="-6" width="252" height="112" fill="#fff"/><path d="M196.0,40 h6 v20 h-6 Z " fill="#000"/></mask></defs><g fill="currentColor" mask="url(#mk67037832)"><path fill-rule="nonzero" d="M0,0 h70 v20 h-70 Z M25,26 h20 v68 h-20 Z M82,0 h20 v59 h-20 Z M132,0 h20 v59 h-20 Z M152.00,65.00 A35,35 0 0 1 82.00,65.00 L102.00,65.00 A15,15 0 0 0 132.00,65.00 Z M194.00,60.00 A30.0,30.0 0 0 1 194.00,0.00 L194.00,20.00 A10.0,10.0 0 0 0 194.00,40.00 Z M194.0,0 h40.0 v20 h-40.0 Z M193.99,40.0 h10.02 v20 h-10.02 Z M204.00,40.00 A30.0,30.0 0 0 1 204.00,100.00 L204.00,80.00 A10.0,10.0 0 0 0 204.00,60.00 Z M164,80 h40.0 v20 h-40.0 Z "/></g></svg><figcaption>64px</figcaption></figure>
+          <figure><svg viewBox="-6 -6 252 112" width="32" class="" role="img" aria-label="TUS"><defs><mask id="mk67037832" maskUnits="userSpaceOnUse" x="-6" y="-6" width="252" height="112"><rect x="-6" y="-6" width="252" height="112" fill="#fff"/><path d="M196.0,40 h6 v20 h-6 Z " fill="#000"/></mask></defs><g fill="currentColor" mask="url(#mk67037832)"><path fill-rule="nonzero" d="M0,0 h70 v20 h-70 Z M25,26 h20 v68 h-20 Z M82,0 h20 v59 h-20 Z M132,0 h20 v59 h-20 Z M152.00,65.00 A35,35 0 0 1 82.00,65.00 L102.00,65.00 A15,15 0 0 0 132.00,65.00 Z M194.00,60.00 A30.0,30.0 0 0 1 194.00,0.00 L194.00,20.00 A10.0,10.0 0 0 0 194.00,40.00 Z M194.0,0 h40.0 v20 h-40.0 Z M193.99,40.0 h10.02 v20 h-10.02 Z M204.00,40.00 A30.0,30.0 0 0 1 204.00,100.00 L204.00,80.00 A10.0,10.0 0 0 0 204.00,60.00 Z M164,80 h40.0 v20 h-40.0 Z "/></g></svg><figcaption>32px</figcaption></figure>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="opt">
+    <h2>C. Chồng lấn</h2>
+    <p class="muted">Ba chữ đè lên nhau một khoảng bằng độ dày nét, phần giao nhau bị khoét trống. Đây là hướng "giao thoa" sát nhất với ý ban đầu của bạn, nhưng nhìn bận mắt hơn hai bản kia.</p>
+    <div class="board hero"><svg viewBox="-6 -6 192 112" class="" role="img" aria-label="Logo TUS, C. Chồng lấn"><g fill="currentColor"><mask id="xo72599648" maskUnits="userSpaceOnUse" x="-6" y="-6" width="192" height="112"><rect x="-6" y="-6" width="192" height="112" fill="#fff"/><path d="M140.00,60.00 A30.0,30.0 0 0 1 140.00,0.00 L140.00,20.00 A10.0,10.0 0 0 0 140.00,40.00 Z M140.0,0 h40.0 v20 h-40.0 Z M139.99,40.0 h10.02 v20 h-10.02 Z M150.00,40.00 A30.0,30.0 0 0 1 150.00,100.00 L150.00,80.00 A10.0,10.0 0 0 0 150.00,60.00 Z M110,80 h40.0 v20 h-40.0 Z " fill="#000"/></mask><path mask="url(#xo72599648)" fill-rule="evenodd" d="M0,0 h70 v20 h-70 Z M25,0 h20 v100 h-20 Z M50,0 h20 v60 h-20 Z M100,0 h20 v60 h-20 Z M120.00,60.00 A35,35 0 0 1 50.00,60.00 L70.00,60.00 A15,15 0 0 0 100.00,60.00 Z "/><mask id="xo59728240" maskUnits="userSpaceOnUse" x="-6" y="-6" width="192" height="112"><rect x="-6" y="-6" width="192" height="112" fill="#fff"/><path d="M50,0 h20 v60 h-20 Z M100,0 h20 v60 h-20 Z M120.00,60.00 A35,35 0 0 1 50.00,60.00 L70.00,60.00 A15,15 0 0 0 100.00,60.00 Z " fill="#000"/></mask><path mask="url(#xo59728240)" fill-rule="nonzero" d="M140.00,60.00 A30.0,30.0 0 0 1 140.00,0.00 L140.00,20.00 A10.0,10.0 0 0 0 140.00,40.00 Z M140.0,0 h40.0 v20 h-40.0 Z M139.99,40.0 h10.02 v20 h-10.02 Z M150.00,40.00 A30.0,30.0 0 0 1 150.00,100.00 L150.00,80.00 A10.0,10.0 0 0 0 150.00,60.00 Z M110,80 h40.0 v20 h-40.0 Z "/></g></svg></div>
+    <div class="pair">
+      <div class="board inv"><svg viewBox="-6 -6 192 112" class="" role="img" aria-label="Logo TUS trên nền tối"><g fill="currentColor"><mask id="xo72599648" maskUnits="userSpaceOnUse" x="-6" y="-6" width="192" height="112"><rect x="-6" y="-6" width="192" height="112" fill="#fff"/><path d="M140.00,60.00 A30.0,30.0 0 0 1 140.00,0.00 L140.00,20.00 A10.0,10.0 0 0 0 140.00,40.00 Z M140.0,0 h40.0 v20 h-40.0 Z M139.99,40.0 h10.02 v20 h-10.02 Z M150.00,40.00 A30.0,30.0 0 0 1 150.00,100.00 L150.00,80.00 A10.0,10.0 0 0 0 150.00,60.00 Z M110,80 h40.0 v20 h-40.0 Z " fill="#000"/></mask><path mask="url(#xo72599648)" fill-rule="evenodd" d="M0,0 h70 v20 h-70 Z M25,0 h20 v100 h-20 Z M50,0 h20 v60 h-20 Z M100,0 h20 v60 h-20 Z M120.00,60.00 A35,35 0 0 1 50.00,60.00 L70.00,60.00 A15,15 0 0 0 100.00,60.00 Z "/><mask id="xo59728240" maskUnits="userSpaceOnUse" x="-6" y="-6" width="192" height="112"><rect x="-6" y="-6" width="192" height="112" fill="#fff"/><path d="M50,0 h20 v60 h-20 Z M100,0 h20 v60 h-20 Z M120.00,60.00 A35,35 0 0 1 50.00,60.00 L70.00,60.00 A15,15 0 0 0 100.00,60.00 Z " fill="#000"/></mask><path mask="url(#xo59728240)" fill-rule="nonzero" d="M140.00,60.00 A30.0,30.0 0 0 1 140.00,0.00 L140.00,20.00 A10.0,10.0 0 0 0 140.00,40.00 Z M140.0,0 h40.0 v20 h-40.0 Z M139.99,40.0 h10.02 v20 h-10.02 Z M150.00,40.00 A30.0,30.0 0 0 1 150.00,100.00 L150.00,80.00 A10.0,10.0 0 0 0 150.00,60.00 Z M110,80 h40.0 v20 h-40.0 Z "/></g></svg></div>
+      <div class="board" style="justify-content:flex-start">
+        <div class="strip">
+          <figure><svg viewBox="-6 -6 192 112" width="160" class="" role="img" aria-label="TUS"><g fill="currentColor"><mask id="xo72599648" maskUnits="userSpaceOnUse" x="-6" y="-6" width="192" height="112"><rect x="-6" y="-6" width="192" height="112" fill="#fff"/><path d="M140.00,60.00 A30.0,30.0 0 0 1 140.00,0.00 L140.00,20.00 A10.0,10.0 0 0 0 140.00,40.00 Z M140.0,0 h40.0 v20 h-40.0 Z M139.99,40.0 h10.02 v20 h-10.02 Z M150.00,40.00 A30.0,30.0 0 0 1 150.00,100.00 L150.00,80.00 A10.0,10.0 0 0 0 150.00,60.00 Z M110,80 h40.0 v20 h-40.0 Z " fill="#000"/></mask><path mask="url(#xo72599648)" fill-rule="evenodd" d="M0,0 h70 v20 h-70 Z M25,0 h20 v100 h-20 Z M50,0 h20 v60 h-20 Z M100,0 h20 v60 h-20 Z M120.00,60.00 A35,35 0 0 1 50.00,60.00 L70.00,60.00 A15,15 0 0 0 100.00,60.00 Z "/><mask id="xo59728240" maskUnits="userSpaceOnUse" x="-6" y="-6" width="192" height="112"><rect x="-6" y="-6" width="192" height="112" fill="#fff"/><path d="M50,0 h20 v60 h-20 Z M100,0 h20 v60 h-20 Z M120.00,60.00 A35,35 0 0 1 50.00,60.00 L70.00,60.00 A15,15 0 0 0 100.00,60.00 Z " fill="#000"/></mask><path mask="url(#xo59728240)" fill-rule="nonzero" d="M140.00,60.00 A30.0,30.0 0 0 1 140.00,0.00 L140.00,20.00 A10.0,10.0 0 0 0 140.00,40.00 Z M140.0,0 h40.0 v20 h-40.0 Z M139.99,40.0 h10.02 v20 h-10.02 Z M150.00,40.00 A30.0,30.0 0 0 1 150.00,100.00 L150.00,80.00 A10.0,10.0 0 0 0 150.00,60.00 Z M110,80 h40.0 v20 h-40.0 Z "/></g></svg><figcaption>160px</figcaption></figure>
+          <figure><svg viewBox="-6 -6 192 112" width="64" class="" role="img" aria-label="TUS"><g fill="currentColor"><mask id="xo72599648" maskUnits="userSpaceOnUse" x="-6" y="-6" width="192" height="112"><rect x="-6" y="-6" width="192" height="112" fill="#fff"/><path d="M140.00,60.00 A30.0,30.0 0 0 1 140.00,0.00 L140.00,20.00 A10.0,10.0 0 0 0 140.00,40.00 Z M140.0,0 h40.0 v20 h-40.0 Z M139.99,40.0 h10.02 v20 h-10.02 Z M150.00,40.00 A30.0,30.0 0 0 1 150.00,100.00 L150.00,80.00 A10.0,10.0 0 0 0 150.00,60.00 Z M110,80 h40.0 v20 h-40.0 Z " fill="#000"/></mask><path mask="url(#xo72599648)" fill-rule="evenodd" d="M0,0 h70 v20 h-70 Z M25,0 h20 v100 h-20 Z M50,0 h20 v60 h-20 Z M100,0 h20 v60 h-20 Z M120.00,60.00 A35,35 0 0 1 50.00,60.00 L70.00,60.00 A15,15 0 0 0 100.00,60.00 Z "/><mask id="xo59728240" maskUnits="userSpaceOnUse" x="-6" y="-6" width="192" height="112"><rect x="-6" y="-6" width="192" height="112" fill="#fff"/><path d="M50,0 h20 v60 h-20 Z M100,0 h20 v60 h-20 Z M120.00,60.00 A35,35 0 0 1 50.00,60.00 L70.00,60.00 A15,15 0 0 0 100.00,60.00 Z " fill="#000"/></mask><path mask="url(#xo59728240)" fill-rule="nonzero" d="M140.00,60.00 A30.0,30.0 0 0 1 140.00,0.00 L140.00,20.00 A10.0,10.0 0 0 0 140.00,40.00 Z M140.0,0 h40.0 v20 h-40.0 Z M139.99,40.0 h10.02 v20 h-10.02 Z M150.00,40.00 A30.0,30.0 0 0 1 150.00,100.00 L150.00,80.00 A10.0,10.0 0 0 0 150.00,60.00 Z M110,80 h40.0 v20 h-40.0 Z "/></g></svg><figcaption>64px</figcaption></figure>
+          <figure><svg viewBox="-6 -6 192 112" width="32" class="" role="img" aria-label="TUS"><g fill="currentColor"><mask id="xo72599648" maskUnits="userSpaceOnUse" x="-6" y="-6" width="192" height="112"><rect x="-6" y="-6" width="192" height="112" fill="#fff"/><path d="M140.00,60.00 A30.0,30.0 0 0 1 140.00,0.00 L140.00,20.00 A10.0,10.0 0 0 0 140.00,40.00 Z M140.0,0 h40.0 v20 h-40.0 Z M139.99,40.0 h10.02 v20 h-10.02 Z M150.00,40.00 A30.0,30.0 0 0 1 150.00,100.00 L150.00,80.00 A10.0,10.0 0 0 0 150.00,60.00 Z M110,80 h40.0 v20 h-40.0 Z " fill="#000"/></mask><path mask="url(#xo72599648)" fill-rule="evenodd" d="M0,0 h70 v20 h-70 Z M25,0 h20 v100 h-20 Z M50,0 h20 v60 h-20 Z M100,0 h20 v60 h-20 Z M120.00,60.00 A35,35 0 0 1 50.00,60.00 L70.00,60.00 A15,15 0 0 0 100.00,60.00 Z "/><mask id="xo59728240" maskUnits="userSpaceOnUse" x="-6" y="-6" width="192" height="112"><rect x="-6" y="-6" width="192" height="112" fill="#fff"/><path d="M50,0 h20 v60 h-20 Z M100,0 h20 v60 h-20 Z M120.00,60.00 A35,35 0 0 1 50.00,60.00 L70.00,60.00 A15,15 0 0 0 100.00,60.00 Z " fill="#000"/></mask><path mask="url(#xo59728240)" fill-rule="nonzero" d="M140.00,60.00 A30.0,30.0 0 0 1 140.00,0.00 L140.00,20.00 A10.0,10.0 0 0 0 140.00,40.00 Z M140.0,0 h40.0 v20 h-40.0 Z M139.99,40.0 h10.02 v20 h-10.02 Z M150.00,40.00 A30.0,30.0 0 0 1 150.00,100.00 L150.00,80.00 A10.0,10.0 0 0 0 150.00,60.00 Z M110,80 h40.0 v20 h-40.0 Z "/></g></svg><figcaption>32px</figcaption></figure>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="ask">
+    <h3>Bạn chọn giúp tôi</h3>
+    <ol>
+      <li>A, B hay C? Hoặc lấy chi tiết của bản này ghép sang bản kia.</li>
+      <li>Độ đậm nét như vậy ổn chưa, hay muốn mảnh hơn?</li>
+      <li>Chốt xong, tôi sẽ tinh chỉnh khoảng cách, vẽ bản favicon vuông và xuất bộ file SVG/PNG.</li>
+    </ol>
+  </section>
+</main>

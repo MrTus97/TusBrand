@@ -1,0 +1,51 @@
+/*
+ * Bảng màu TUS (tupt.dev) — nguồn: tokens/colors.json
+ *
+ * Mặc định theo chế độ sáng/tối của hệ điều hành.
+ * Nếu site có nút chuyển theme, đặt data-theme="light" | "dark" trên <html>
+ * (hoặc class "dark" kiểu Tailwind) để ghi đè.
+ */
+
+:root {
+  --tus-brand: #251097;
+  --tus-brand-light: #8B7CFF;
+
+  /* light (mặc định) */
+  --tus-logo: #251097;
+  --tus-bg: #FFFFFF;
+  --tus-surface: #F3F3F3;
+  --tus-border: #E5E5E5;
+  --tus-text: #1F1F1F;
+  --tus-muted: #616161;
+  --tus-on-brand: #FFFFFF;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]):not(.light) {
+    --tus-logo: #8B7CFF;
+    --tus-bg: #1E1E1E;
+    --tus-surface: #181818;
+    --tus-border: #2B2B2B;
+    --tus-text: #CCCCCC;
+    --tus-muted: #9D9D9D;
+    --tus-on-brand: #8B7CFF;
+    color-scheme: dark;
+  }
+}
+
+:root[data-theme="dark"],
+:root.dark {
+  --tus-logo: #8B7CFF;
+  --tus-bg: #1E1E1E;
+  --tus-surface: #181818;
+  --tus-border: #2B2B2B;
+  --tus-text: #CCCCCC;
+  --tus-muted: #9D9D9D;
+  --tus-on-brand: #8B7CFF;
+  color-scheme: dark;
+}
+
+:root[data-theme="light"],
+:root.light {
+  color-scheme: light;
+}

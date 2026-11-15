@@ -1,0 +1,13 @@
+# OS / editor
+.DS_Store
+Thumbs.db
+desktop.ini
+.vscode/
+.idea/
+
+# Python cache (nếu sau này đưa script xuất logo vào repo)
+__pycache__/
+*.pyc
+
+# Claude Code: thiết lập cá nhân
+.claude/settings.local.json

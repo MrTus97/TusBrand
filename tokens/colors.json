@@ -1,0 +1,25 @@
+{
+  "$description": "Bảng màu thương hiệu TUS (tupt.dev). Light/dark theo kiểu chủ đề VS Code.",
+  "brand": {
+    "primary": { "value": "#251097", "description": "Tím than thương hiệu. Màu logo trên nền sáng." },
+    "primary-light": { "value": "#8B7CFF", "description": "Tím oải hương. Màu logo trên nền tối." }
+  },
+  "light": {
+    "logo":    { "value": "#251097", "description": "Logo. Tương phản 13.1:1 trên bg." },
+    "bg":      { "value": "#FFFFFF", "description": "Nền chính" },
+    "surface": { "value": "#F3F3F3", "description": "Thanh tab, sidebar, khối phụ" },
+    "border":  { "value": "#E5E5E5", "description": "Đường kẻ, viền" },
+    "text":    { "value": "#1F1F1F", "description": "Chữ chính" },
+    "muted":   { "value": "#616161", "description": "Chữ phụ, menu" },
+    "on-brand":{ "value": "#FFFFFF", "description": "Logo/chữ đặt trên nền màu thương hiệu (icon ứng dụng)" }
+  },
+  "dark": {
+    "logo":    { "value": "#8B7CFF", "description": "Logo. Tương phản 5.1:1 trên bg (#251097 chỉ đạt 1.3:1)." },
+    "bg":      { "value": "#1E1E1E", "description": "Nền chính" },
+    "surface": { "value": "#181818", "description": "Thanh tab, sidebar, khối phụ" },
+    "border":  { "value": "#2B2B2B", "description": "Đường kẻ, viền" },
+    "text":    { "value": "#CCCCCC", "description": "Chữ chính" },
+    "muted":   { "value": "#9D9D9D", "description": "Chữ phụ, menu" },
+    "on-brand":{ "value": "#8B7CFF", "description": "Logo trên icon ứng dụng bản tối (nền #1E1E1E)" }
+  }
+}

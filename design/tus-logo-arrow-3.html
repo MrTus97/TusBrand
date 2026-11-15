@@ -1,0 +1,121 @@
+<title>Tus Logo Mũi Tên 3</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lexend:wght@500;600&family=Be+Vietnam+Pro:wght@400;500;600&display=swap">
+<style>
+/* Layout: một cột; so sánh trước/sau ở đầu trang, sau đó là các biến thể xếp lưới hai cột. */
+:root{
+  --paper:#F4F4F7; --card:#FFFFFF; --ink:#16151C; --muted:#5E5D6B; --line:#DCDBE3;
+  --brand:#251097; --on-brand:#FFFFFF; --c1:#251097; --c2:#8C7CF0;
+  --display:"Lexend","Be Vietnam Pro",system-ui,sans-serif;
+  --body:"Be Vietnam Pro",system-ui,-apple-system,"Segoe UI",sans-serif;
+}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
+  --paper:#121118; --card:#1B1A23; --ink:#ECEBF2; --muted:#A09FAE; --line:#2D2C38;
+  --brand:#A79BFF; --on-brand:#16151C; --c1:#A79BFF; --c2:#5A4BC9; color-scheme:dark}}
+:root[data-theme="dark"]{--paper:#121118; --card:#1B1A23; --ink:#ECEBF2; --muted:#A09FAE; --line:#2D2C38;
+  --brand:#A79BFF; --on-brand:#16151C; --c1:#A79BFF; --c2:#5A4BC9; color-scheme:dark}
+
+body{background:var(--paper);color:var(--ink);font-family:var(--body);font-size:16px;line-height:1.6}
+.wrap{max-width:980px;margin:0 auto;padding-block:48px 80px;
+  padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));
+  display:flex;flex-direction:column;gap:56px}
+h1,h2,h3{font-family:var(--display);font-weight:600;line-height:1.2;text-wrap:balance;margin:0}
+h1{font-size:clamp(28px,5vw,40px)} h2{font-size:24px} h3{font-size:17px}
+p{margin:0;max-width:68ch}
+.muted{color:var(--muted)}
+section{display:flex;flex-direction:column;gap:20px}
+.intro{display:flex;flex-direction:column;gap:12px}
+.board{background:var(--card);border:1px solid var(--line);border-radius:6px;padding:clamp(20px,4vw,40px);display:flex;justify-content:center;align-items:center;min-width:0;color:var(--brand)}
+.board .mk{width:100%;max-width:240px;height:auto}
+.inv{background:var(--brand);border-color:var(--brand);color:var(--on-brand)}
+.compare{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.compare figure,.grid figure{margin:0;display:flex;flex-direction:column;gap:10px;min-width:0}
+.compare img{width:100%;max-width:240px;height:auto}
+figcaption{font-size:14px;color:var(--muted)}
+figcaption b{color:var(--ink);font-weight:600;display:block}
+.grid{display:grid;grid-template-columns:1fr 1fr;gap:32px 16px}
+.pair2{display:grid;grid-template-columns:1fr 1fr;gap:8px}
+.pair2 .board{padding:clamp(14px,3vw,28px)}
+.pair2 .mk{max-width:150px}
+.diagram{display:grid;grid-template-columns:minmax(0,260px) 1fr;gap:24px;align-items:center}
+.diagram .stack{position:relative;width:100%;max-width:260px;aspect-ratio:212/193}
+.diagram .stack svg{position:absolute;inset:0;width:100%;height:100%}
+.legend{display:flex;flex-direction:column;gap:10px}
+.legend div{display:flex;gap:12px;align-items:baseline}
+.key{font-family:var(--display);font-weight:600;font-size:20px;min-width:1.4em}
+.k1{color:var(--c1)} .k2{color:var(--c2)} .k3{color:var(--ink)}
+.sizes{display:flex;flex-wrap:wrap;align-items:flex-end;gap:24px}
+.sizes figure{margin:0;display:flex;flex-direction:column;align-items:center;gap:6px;color:var(--brand)}
+.sizes figcaption{font-size:13px;font-variant-numeric:tabular-nums}
+.sz-label{font-weight:600;min-width:150px;align-self:center}
+.tile{width:120px;height:120px;border-radius:26px;background:var(--brand);color:var(--on-brand);display:grid;place-items:center}
+.ask{background:var(--card);border:1px solid var(--line);border-radius:6px;padding:24px clamp(20px,4vw,32px)}
+.ask ol{margin:12px 0 0;padding-left:20px;display:flex;flex-direction:column;gap:8px}
+@media (max-width:640px){.compare,.grid,.diagram{grid-template-columns:1fr}}
+.hero .mk{max-width:300px}
+.three{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.three figure{margin:0;display:flex;flex-direction:column;gap:10px;min-width:0}
+.three .board{flex-direction:column;gap:12px}
+.three .mk{max-width:170px}
+@media (max-width:860px){.three{grid-template-columns:1fr 1fr}} @media (max-width:520px){.three{grid-template-columns:1fr}}
+</style>
+
+<main class="wrap">
+  <header class="intro">
+    <h1>Logo TUS mũi tên, bản 3</h1>
+    <p class="muted">Chữ T đứng giữa làm trục. Khung ngoài hai bên giờ đối xứng hoàn toàn: hai khe ở vai bằng nhau, hai cạnh đứng bắt đầu cùng một độ cao, đáy là hình chữ V. Bên trái, khe vai là miệng chữ U. Bên phải, khe vai là chỗ hở phía trên của chữ S, sống chéo của S nối thẳng vào đầu cạnh phải. Chỉ có một chỗ cắt lệch: cạnh đáy phải dừng trước thân mũi tên để chữ S không dính vào chữ T.</p>
+  </header>
+  <section>
+    <div class="compare">
+      <div class="board hero"><svg viewBox="-106.6 -120.0 213.2 240.0" class="mk"><defs><mask id="hero-l" maskUnits="userSpaceOnUse" x="-200" y="-200" width="400" height="400"><rect x="-200" y="-200" width="400" height="400" fill="#000"/><g fill="none" stroke="#fff" stroke-width="20" stroke-linejoin="round" stroke-linecap="round"><path d="M-86.60,-50.00 L0.00,-100.00 L86.60,-50.00"/><path d="M0.00,-88.00 L0.00,100.00"/><path d="M-86.60,-12.00 L-86.60,50.00 L0.00,100.00"/><path d="M0.00,-62.00 L86.60,-12.00 L86.60,50.00 L32.91,81.00"/></g></mask></defs><rect x="-200" y="-200" width="400" height="400" fill="currentColor" mask="url(#hero-l)"/></svg></div>
+      <div class="board inv hero"><svg viewBox="-106.6 -120.0 213.2 240.0" class="mk"><defs><mask id="hero-d" maskUnits="userSpaceOnUse" x="-200" y="-200" width="400" height="400"><rect x="-200" y="-200" width="400" height="400" fill="#000"/><g fill="none" stroke="#fff" stroke-width="20" stroke-linejoin="round" stroke-linecap="round"><path d="M-86.60,-50.00 L0.00,-100.00 L86.60,-50.00"/><path d="M0.00,-88.00 L0.00,100.00"/><path d="M-86.60,-12.00 L-86.60,50.00 L0.00,100.00"/><path d="M0.00,-62.00 L86.60,-12.00 L86.60,50.00 L32.91,81.00"/></g></mask></defs><rect x="-200" y="-200" width="400" height="400" fill="currentColor" mask="url(#hero-d)"/></svg></div>
+    </div>
+  </section>
+  <section>
+    <h2>So sánh</h2>
+    <div class="three">
+      <figure>
+        <div class="board"><svg viewBox="-106.6 -120.0 213.2 240.0" class="mk"><defs><mask id="a-l" maskUnits="userSpaceOnUse" x="-200" y="-200" width="400" height="400"><rect x="-200" y="-200" width="400" height="400" fill="#000"/><g fill="none" stroke="#fff" stroke-width="20" stroke-linejoin="round" stroke-linecap="round"><path d="M-86.60,-50.00 L0.00,-100.00 L86.60,-50.00"/><path d="M0.00,-88.00 L0.00,100.00"/><path d="M-86.60,-12.00 L-86.60,50.00 L0.00,100.00"/><path d="M0.00,-62.00 L86.60,-12.00 L86.60,50.00 L32.91,81.00"/></g></mask></defs><rect x="-200" y="-200" width="400" height="400" fill="currentColor" mask="url(#a-l)"/></svg></div>
+        <div class="board inv"><svg viewBox="-106.6 -120.0 213.2 240.0" class="mk"><defs><mask id="a-d" maskUnits="userSpaceOnUse" x="-200" y="-200" width="400" height="400"><rect x="-200" y="-200" width="400" height="400" fill="#000"/><g fill="none" stroke="#fff" stroke-width="20" stroke-linejoin="round" stroke-linecap="round"><path d="M-86.60,-50.00 L0.00,-100.00 L86.60,-50.00"/><path d="M0.00,-88.00 L0.00,100.00"/><path d="M-86.60,-12.00 L-86.60,50.00 L0.00,100.00"/><path d="M0.00,-62.00 L86.60,-12.00 L86.60,50.00 L32.91,81.00"/></g></mask></defs><rect x="-200" y="-200" width="400" height="400" fill="currentColor" mask="url(#a-d)"/></svg></div>
+        <figcaption><b>Nét 20</b>Khung ngoài đối xứng, sống chữ S song song với mái.</figcaption>
+      </figure>
+      <figure>
+        <div class="board"><svg viewBox="-110.6 -124.0 221.2 248.0" class="mk"><defs><mask id="d-l" maskUnits="userSpaceOnUse" x="-200" y="-200" width="400" height="400"><rect x="-200" y="-200" width="400" height="400" fill="#000"/><g fill="none" stroke="#fff" stroke-width="24" stroke-linejoin="round" stroke-linecap="round"><path d="M-86.60,-50.00 L0.00,-100.00 L86.60,-50.00"/><path d="M0.00,-85.60 L0.00,100.00"/><path d="M-86.60,-4.40 L-86.60,50.00 L0.00,100.00"/><path d="M0.00,-54.40 L86.60,-4.40 L86.60,50.00 L39.49,77.20"/></g></mask></defs><rect x="-200" y="-200" width="400" height="400" fill="currentColor" mask="url(#d-l)"/></svg></div>
+        <div class="board inv"><svg viewBox="-110.6 -124.0 221.2 248.0" class="mk"><defs><mask id="d-d" maskUnits="userSpaceOnUse" x="-200" y="-200" width="400" height="400"><rect x="-200" y="-200" width="400" height="400" fill="#000"/><g fill="none" stroke="#fff" stroke-width="24" stroke-linejoin="round" stroke-linecap="round"><path d="M-86.60,-50.00 L0.00,-100.00 L86.60,-50.00"/><path d="M0.00,-85.60 L0.00,100.00"/><path d="M-86.60,-4.40 L-86.60,50.00 L0.00,100.00"/><path d="M0.00,-54.40 L86.60,-4.40 L86.60,50.00 L39.49,77.20"/></g></mask></defs><rect x="-200" y="-200" width="400" height="400" fill="currentColor" mask="url(#d-d)"/></svg></div>
+        <figcaption><b>Nét 24</b>Như bản nét 20 nhưng đậm hơn, rõ hơn ở cỡ nhỏ.</figcaption>
+      </figure>
+      <figure>
+        <div class="board"><svg viewBox="-106.6 -120.0 213.2 240.0" class="mk"><defs><mask id="p-l" maskUnits="userSpaceOnUse" x="-200" y="-200" width="400" height="400"><rect x="-200" y="-200" width="400" height="400" fill="#000"/><g fill="none" stroke="#fff" stroke-width="20" stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4"><path d="M-86.60,-50.00 L0.00,-100.00 L86.60,-50.00"/><path d="M0.00,-88.00 L0.00,100.00"/><path d="M-86.60,-12.00 L-86.60,50.00 L0.00,100.00"/><path d="M0.00,-25.00 L86.60,25.00 L86.60,50.00 L32.91,81.00"/></g></mask></defs><rect x="-200" y="-200" width="400" height="400" fill="currentColor" mask="url(#p-l)"/></svg></div>
+        <div class="board inv"><svg viewBox="-106.6 -120.0 213.2 240.0" class="mk"><defs><mask id="p-d" maskUnits="userSpaceOnUse" x="-200" y="-200" width="400" height="400"><rect x="-200" y="-200" width="400" height="400" fill="#000"/><g fill="none" stroke="#fff" stroke-width="20" stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4"><path d="M-86.60,-50.00 L0.00,-100.00 L86.60,-50.00"/><path d="M0.00,-88.00 L0.00,100.00"/><path d="M-86.60,-12.00 L-86.60,50.00 L0.00,100.00"/><path d="M0.00,-25.00 L86.60,25.00 L86.60,50.00 L32.91,81.00"/></g></mask></defs><rect x="-200" y="-200" width="400" height="400" fill="currentColor" mask="url(#p-d)"/></svg></div>
+        <figcaption><b>Bản 2 (trước)</b>Bản trước để so sánh: cạnh phải ngắn hơn cạnh trái nên lệch.</figcaption>
+      </figure>
+    </div>
+  </section>
+  <section>
+    <h2>Ở kích thước nhỏ</h2>
+    <div class="board" style="flex-direction:column;align-items:flex-start;gap:24px">
+      <div class="sizes">
+        <span class="sz-label">Nét 20</span>
+        <figure><div class="tile"><svg viewBox="-106.6 -120.0 213.2 240.0" class="mk" style="width:84px"><defs><mask id="a-t" maskUnits="userSpaceOnUse" x="-200" y="-200" width="400" height="400"><rect x="-200" y="-200" width="400" height="400" fill="#000"/><g fill="none" stroke="#fff" stroke-width="20" stroke-linejoin="round" stroke-linecap="round"><path d="M-86.60,-50.00 L0.00,-100.00 L86.60,-50.00"/><path d="M0.00,-88.00 L0.00,100.00"/><path d="M-86.60,-12.00 L-86.60,50.00 L0.00,100.00"/><path d="M0.00,-62.00 L86.60,-12.00 L86.60,50.00 L32.91,81.00"/></g></mask></defs><rect x="-200" y="-200" width="400" height="400" fill="currentColor" mask="url(#a-t)"/></svg></div><figcaption>App icon</figcaption></figure>
+        <figure><svg viewBox="-106.6 -120.0 213.2 240.0" class="mk" style="width:64px"><defs><mask id="a-64" maskUnits="userSpaceOnUse" x="-200" y="-200" width="400" height="400"><rect x="-200" y="-200" width="400" height="400" fill="#000"/><g fill="none" stroke="#fff" stroke-width="20" stroke-linejoin="round" stroke-linecap="round"><path d="M-86.60,-50.00 L0.00,-100.00 L86.60,-50.00"/><path d="M0.00,-88.00 L0.00,100.00"/><path d="M-86.60,-12.00 L-86.60,50.00 L0.00,100.00"/><path d="M0.00,-62.00 L86.60,-12.00 L86.60,50.00 L32.91,81.00"/></g></mask></defs><rect x="-200" y="-200" width="400" height="400" fill="currentColor" mask="url(#a-64)"/></svg><figcaption>64px</figcaption></figure>
+        <figure><svg viewBox="-106.6 -120.0 213.2 240.0" class="mk" style="width:32px"><defs><mask id="a-32" maskUnits="userSpaceOnUse" x="-200" y="-200" width="400" height="400"><rect x="-200" y="-200" width="400" height="400" fill="#000"/><g fill="none" stroke="#fff" stroke-width="20" stroke-linejoin="round" stroke-linecap="round"><path d="M-86.60,-50.00 L0.00,-100.00 L86.60,-50.00"/><path d="M0.00,-88.00 L0.00,100.00"/><path d="M-86.60,-12.00 L-86.60,50.00 L0.00,100.00"/><path d="M0.00,-62.00 L86.60,-12.00 L86.60,50.00 L32.91,81.00"/></g></mask></defs><rect x="-200" y="-200" width="400" height="400" fill="currentColor" mask="url(#a-32)"/></svg><figcaption>32px</figcaption></figure>
+        <figure><svg viewBox="-106.6 -120.0 213.2 240.0" class="mk" style="width:16px"><defs><mask id="a-16" maskUnits="userSpaceOnUse" x="-200" y="-200" width="400" height="400"><rect x="-200" y="-200" width="400" height="400" fill="#000"/><g fill="none" stroke="#fff" stroke-width="20" stroke-linejoin="round" stroke-linecap="round"><path d="M-86.60,-50.00 L0.00,-100.00 L86.60,-50.00"/><path d="M0.00,-88.00 L0.00,100.00"/><path d="M-86.60,-12.00 L-86.60,50.00 L0.00,100.00"/><path d="M0.00,-62.00 L86.60,-12.00 L86.60,50.00 L32.91,81.00"/></g></mask></defs><rect x="-200" y="-200" width="400" height="400" fill="currentColor" mask="url(#a-16)"/></svg><figcaption>16px</figcaption></figure>
+      </div>
+      <div class="sizes">
+        <span class="sz-label">Nét 24</span>
+        <figure><div class="tile"><svg viewBox="-110.6 -124.0 221.2 248.0" class="mk" style="width:84px"><defs><mask id="d-t" maskUnits="userSpaceOnUse" x="-200" y="-200" width="400" height="400"><rect x="-200" y="-200" width="400" height="400" fill="#000"/><g fill="none" stroke="#fff" stroke-width="24" stroke-linejoin="round" stroke-linecap="round"><path d="M-86.60,-50.00 L0.00,-100.00 L86.60,-50.00"/><path d="M0.00,-85.60 L0.00,100.00"/><path d="M-86.60,-4.40 L-86.60,50.00 L0.00,100.00"/><path d="M0.00,-54.40 L86.60,-4.40 L86.60,50.00 L39.49,77.20"/></g></mask></defs><rect x="-200" y="-200" width="400" height="400" fill="currentColor" mask="url(#d-t)"/></svg></div><figcaption>App icon</figcaption></figure>
+        <figure><svg viewBox="-110.6 -124.0 221.2 248.0" class="mk" style="width:64px"><defs><mask id="d-64" maskUnits="userSpaceOnUse" x="-200" y="-200" width="400" height="400"><rect x="-200" y="-200" width="400" height="400" fill="#000"/><g fill="none" stroke="#fff" stroke-width="24" stroke-linejoin="round" stroke-linecap="round"><path d="M-86.60,-50.00 L0.00,-100.00 L86.60,-50.00"/><path d="M0.00,-85.60 L0.00,100.00"/><path d="M-86.60,-4.40 L-86.60,50.00 L0.00,100.00"/><path d="M0.00,-54.40 L86.60,-4.40 L86.60,50.00 L39.49,77.20"/></g></mask></defs><rect x="-200" y="-200" width="400" height="400" fill="currentColor" mask="url(#d-64)"/></svg><figcaption>64px</figcaption></figure>
+        <figure><svg viewBox="-110.6 -124.0 221.2 248.0" class="mk" style="width:32px"><defs><mask id="d-32" maskUnits="userSpaceOnUse" x="-200" y="-200" width="400" height="400"><rect x="-200" y="-200" width="400" height="400" fill="#000"/><g fill="none" stroke="#fff" stroke-width="24" stroke-linejoin="round" stroke-linecap="round"><path d="M-86.60,-50.00 L0.00,-100.00 L86.60,-50.00"/><path d="M0.00,-85.60 L0.00,100.00"/><path d="M-86.60,-4.40 L-86.60,50.00 L0.00,100.00"/><path d="M0.00,-54.40 L86.60,-4.40 L86.60,50.00 L39.49,77.20"/></g></mask></defs><rect x="-200" y="-200" width="400" height="400" fill="currentColor" mask="url(#d-32)"/></svg><figcaption>32px</figcaption></figure>
+        <figure><svg viewBox="-110.6 -124.0 221.2 248.0" class="mk" style="width:16px"><defs><mask id="d-16" maskUnits="userSpaceOnUse" x="-200" y="-200" width="400" height="400"><rect x="-200" y="-200" width="400" height="400" fill="#000"/><g fill="none" stroke="#fff" stroke-width="24" stroke-linejoin="round" stroke-linecap="round"><path d="M-86.60,-50.00 L0.00,-100.00 L86.60,-50.00"/><path d="M0.00,-85.60 L0.00,100.00"/><path d="M-86.60,-4.40 L-86.60,50.00 L0.00,100.00"/><path d="M0.00,-54.40 L86.60,-4.40 L86.60,50.00 L39.49,77.20"/></g></mask></defs><rect x="-200" y="-200" width="400" height="400" fill="currentColor" mask="url(#d-16)"/></svg><figcaption>16px</figcaption></figure>
+      </div>
+    </div>
+  </section>
+  <section class="ask">
+    <h3>Bạn xem giúp tôi</h3>
+    <ol>
+      <li>Khung đối xứng như vậy đã đúng ý chưa?</li>
+      <li>Nét 20 hay 24?</li>
+    </ol>
+  </section>
+</main>

@@ -1,0 +1,158 @@
+<title>Tus Logo Vòng 2</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lexend:wght@500;600&family=Be+Vietnam+Pro:wght@400;500;600&display=swap">
+<style>
+/* Layout: một cột; logo chính là thứ lớn nhất, phần giải thích và phương án phụ nhỏ dần xuống dưới. */
+:root{
+  --paper:#F4F5F6; --card:#FFFFFF; --ink:#15171A; --muted:#5D636B; --line:#D9DCE0;
+  --c1:#D9480F; --c2:#1C7ED6; --c3:#2F9E44;
+  --display:"Lexend","Be Vietnam Pro",system-ui,sans-serif;
+  --body:"Be Vietnam Pro",system-ui,-apple-system,"Segoe UI",sans-serif;
+}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
+  --paper:#111316; --card:#191C20; --ink:#ECEEF1; --muted:#9BA2AA; --line:#2B3036;
+  --c1:#FF8A50; --c2:#6CB2FF; --c3:#69DB7C; color-scheme:dark}}
+:root[data-theme="dark"]{--paper:#111316; --card:#191C20; --ink:#ECEEF1; --muted:#9BA2AA; --line:#2B3036;
+  --c1:#FF8A50; --c2:#6CB2FF; --c3:#69DB7C; color-scheme:dark}
+
+body{background:var(--paper);color:var(--ink);font-family:var(--body);font-size:16px;line-height:1.6}
+.wrap{max-width:980px;margin:0 auto;padding-block:48px 80px;
+  padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));
+  display:flex;flex-direction:column;gap:56px}
+h1,h2,h3{font-family:var(--display);font-weight:600;line-height:1.2;text-wrap:balance;margin:0}
+h1{font-size:clamp(28px,5vw,40px)} h2{font-size:24px} h3{font-size:17px}
+p{margin:0;max-width:68ch}
+.muted{color:var(--muted)}
+section{display:flex;flex-direction:column;gap:20px}
+.intro{display:flex;flex-direction:column;gap:12px}
+
+.board{background:var(--card);border:1px solid var(--line);border-radius:6px;padding:clamp(24px,6vw,56px);display:flex;justify-content:center;align-items:center;min-width:0}
+.board > svg{width:100%;height:auto;color:var(--ink)}
+.hero > svg{max-width:420px}
+.pair{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.inv{background:var(--ink)} .inv > svg{color:var(--paper)}
+.pair .board > svg{max-width:260px}
+.diagram > svg{max-width:560px}
+.lab{font-family:var(--body);font-size:10px;fill:var(--muted)}
+.lk{font-family:var(--display);font-weight:600;font-size:12px}
+.lab:nth-of-type(1) .lk{fill:var(--c1)} .lab:nth-of-type(2) .lk{fill:var(--c2)} .lab:nth-of-type(3) .lk{fill:var(--c3)}
+
+.alts{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:16px}
+.alts figure{margin:0;display:flex;flex-direction:column;gap:10px}
+.alts .board > svg{max-width:200px}
+.alts figcaption{font-size:14px;color:var(--muted)}
+.alts figcaption b{color:var(--ink);font-weight:600;display:block}
+
+.sizes{display:flex;flex-wrap:wrap;align-items:flex-end;gap:28px}
+.sizes figure{margin:0;display:flex;flex-direction:column;align-items:center;gap:8px}
+.sizes figcaption{font-size:13px;color:var(--muted);font-variant-numeric:tabular-nums}
+.tile{background:var(--ink);display:grid;place-items:center}
+.tile svg{color:var(--paper)}
+.sizes .plain{color:var(--ink)}
+.tab{display:flex;align-items:center;gap:8px;background:var(--paper);border:1px solid var(--line);border-radius:8px 8px 0 0;padding:8px 14px;font-size:13px}
+
+.lockups{display:flex;flex-direction:column;gap:32px;width:100%}
+.lockups svg{height:clamp(52px,11vw,84px);width:auto;max-width:100%;color:var(--ink);display:block}
+
+.ask{background:var(--card);border:1px solid var(--line);border-radius:6px;padding:24px clamp(20px,4vw,32px)}
+.ask ol{margin:12px 0 0;padding-left:20px;display:flex;flex-direction:column;gap:8px}
+@media (max-width:640px){.pair{grid-template-columns:1fr}}
+</style>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true"><defs><mask id="m-tus" maskUnits="userSpaceOnUse" x="-30" y="-30" width="240" height="190"><rect x="-30" y="-30" width="240" height="190" fill="#000"/><path d="M50,8 V85 A30,30 0 0 0 110,85 V62" fill="none" stroke="white" stroke-width="14" stroke-linecap="round" stroke-linejoin="round"/><path d="M22.6,-4.2 L77.4,20.2" fill="none" stroke="white" stroke-width="14" stroke-linecap="round" stroke-linejoin="round"/><path d="M151.4,18.5 A20,20 0 1 0 135,50 A25,25 0 1 1 113.3,87.5" fill="none" stroke="black" stroke-width="22" stroke-linecap="round" stroke-linejoin="round"/><path d="M151.4,18.5 A20,20 0 1 0 135,50 A25,25 0 1 1 113.3,87.5" fill="none" stroke="white" stroke-width="14" stroke-linecap="round" stroke-linejoin="round"/><circle cx="119.5" cy="7.9" r="4.2" fill="white"/><circle cx="130.3" cy="3.4" r="4.8" fill="white"/><circle cx="142.0" cy="3.9" r="4.2" fill="white"/><path d="M156,27 L170,32.5 L156,38 Z" fill="white" stroke="white" stroke-width="2" stroke-linejoin="round"/><ellipse cx="157" cy="42" rx="3.2" ry="4.5" fill="white"/><circle cx="148.4" cy="19.5" r="3.1" fill="black"/></mask>
+<symbol id="tus" viewBox="12 -16 166 142"><rect x="-30" y="-30" width="240" height="190" fill="currentColor" mask="url(#m-tus)"/></symbol><mask id="m-tus-min" maskUnits="userSpaceOnUse" x="-30" y="-30" width="240" height="190"><rect x="-30" y="-30" width="240" height="190" fill="#000"/><path d="M50,8 V85 A30,30 0 0 0 110,85 V40" fill="none" stroke="white" stroke-width="14" stroke-linecap="round" stroke-linejoin="round"/><path d="M22.6,-4.2 L77.4,20.2" fill="none" stroke="white" stroke-width="14" stroke-linecap="round" stroke-linejoin="round"/><path d="M151.4,18.5 A20,20 0 1 0 135,50 A25,25 0 1 1 113.3,87.5" fill="none" stroke="black" stroke-width="22" stroke-linecap="round" stroke-linejoin="round"/><path d="M151.4,18.5 A20,20 0 1 0 135,50 A25,25 0 1 1 113.3,87.5" fill="none" stroke="white" stroke-width="14" stroke-linecap="round" stroke-linejoin="round"/><path d="M156,27 L170,32.5 L156,38 Z" fill="white" stroke="white" stroke-width="2" stroke-linejoin="round"/><circle cx="148.4" cy="19.5" r="3.1" fill="black"/></mask>
+<symbol id="tus-min" viewBox="12 -16 166 142"><rect x="-30" y="-30" width="240" height="190" fill="currentColor" mask="url(#m-tus-min)"/></symbol><mask id="m-tus-flat" maskUnits="userSpaceOnUse" x="-30" y="-30" width="240" height="190"><rect x="-30" y="-30" width="240" height="190" fill="#000"/><path d="M50,8 V85 A30,30 0 0 0 110,85 V62" fill="none" stroke="white" stroke-width="14" stroke-linecap="round" stroke-linejoin="round"/><path d="M20.0,8.0 L80.0,8.0" fill="none" stroke="white" stroke-width="14" stroke-linecap="round" stroke-linejoin="round"/><path d="M151.4,18.5 A20,20 0 1 0 135,50 A25,25 0 1 1 113.3,87.5" fill="none" stroke="black" stroke-width="22" stroke-linecap="round" stroke-linejoin="round"/><path d="M151.4,18.5 A20,20 0 1 0 135,50 A25,25 0 1 1 113.3,87.5" fill="none" stroke="white" stroke-width="14" stroke-linecap="round" stroke-linejoin="round"/><circle cx="119.5" cy="7.9" r="4.2" fill="white"/><circle cx="130.3" cy="3.4" r="4.8" fill="white"/><circle cx="142.0" cy="3.9" r="4.2" fill="white"/><path d="M156,27 L170,32.5 L156,38 Z" fill="white" stroke="white" stroke-width="2" stroke-linejoin="round"/><ellipse cx="157" cy="42" rx="3.2" ry="4.5" fill="white"/><circle cx="148.4" cy="19.5" r="3.1" fill="black"/></mask>
+<symbol id="tus-flat" viewBox="12 -16 166 142"><rect x="-30" y="-30" width="240" height="190" fill="currentColor" mask="url(#m-tus-flat)"/></symbol></defs></svg>
+
+<main class="wrap">
+  <header class="intro">
+    <h1>Logo Tus, vòng 2</h1>
+    <p class="muted">Ba chữ T, u, s chồng lên nhau thành dáng một con gà nhìn sang phải. Thanh ngang chữ T vểnh lên làm đuôi, lòng chữ u là thân, chữ s là cổ, đầu và ức. Đọc từ trái sang phải vẫn là "Tus". Nhìn tổng thể là một con gà.</p>
+  </header>
+
+  <section>
+    <div class="board hero"><svg viewBox="12 -16 166 142" role="img" aria-label="Logo Tus hình con gà"><use href="#tus" x="12" y="-16" width="166" height="142"/></svg></div>
+    <div class="pair">
+      <div class="board inv"><svg viewBox="12 -16 166 142" role="img" aria-label="Logo Tus trên nền tối"><use href="#tus" x="12" y="-16" width="166" height="142"/></svg></div>
+      <div class="board"><svg viewBox="12 -16 166 142" role="img" aria-label="Logo Tus, bản nhỏ"><use href="#tus" x="12" y="-16" width="166" height="142"/></svg></div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Ba chữ chồng lên nhau thế nào</h2>
+    <p class="muted">Chữ T và chữ u dùng chung một nét đứng. Chữ s nằm đè lên nét phải của chữ u, có viền khe hở bao quanh nên vẫn thấy rõ đâu là chữ nào. Đoạn chữ u ló ra bên trong thân gà trông như cái cánh. Mào, mỏ, yếm và mắt là bốn chi tiết nhỏ gắn vào chữ s.</p>
+    <div class="board diagram"><svg viewBox="-70 -24 300 172" role="img" aria-label="Sơ đồ ba chữ T, u, s tạo thành con gà"><path d="M22.6,-4.2 L77.4,20.2" fill="none" stroke="var(--c1)" stroke-width="14" stroke-linecap="round" stroke-linejoin="round"/><path d="M50,8 V40" fill="none" stroke="var(--c1)" stroke-width="14" stroke-linecap="round" stroke-linejoin="round"/><path d="M50,40 V85 A30,30 0 0 0 110,85 V62" fill="none" stroke="var(--c2)" stroke-width="14" stroke-linecap="round" stroke-linejoin="round"/><path d="M151.4,18.5 A20,20 0 1 0 135,50 A25,25 0 1 1 113.3,87.5" fill="none" stroke="var(--card)" stroke-width="22" stroke-linecap="round" stroke-linejoin="round"/><path d="M151.4,18.5 A20,20 0 1 0 135,50 A25,25 0 1 1 113.3,87.5" fill="none" stroke="var(--c3)" stroke-width="14" stroke-linecap="round" stroke-linejoin="round"/><text x="-34" y="0" class="lab"><tspan class="lk">T</tspan> đuôi</text><text x="30" y="142" class="lab"><tspan class="lk">u</tspan> thân</text><text x="120" y="142" class="lab"><tspan class="lk">s</tspan> cổ, đầu, ức</text></svg></div>
+  </section>
+
+  <section>
+    <h2>Hai biến thể để so sánh</h2>
+    <div class="alts">
+      <figure><div class="board"><svg viewBox="12 -16 166 142" role="img" aria-label="Biến thể tối giản"><use href="#tus-min" x="12" y="-16" width="166" height="142"/></svg></div>
+        <figcaption><b>Tối giản</b>Bỏ mào và yếm, chỉ giữ mắt và mỏ. Chữ đọc rõ hơn, nhưng phải nhìn kỹ mới thấy gà.</figcaption></figure>
+      <figure><div class="board"><svg viewBox="12 -16 166 142" role="img" aria-label="Biến thể chữ T thẳng"><use href="#tus-flat" x="12" y="-16" width="166" height="142"/></svg></div>
+        <figcaption><b>Chữ T thẳng</b>Thanh ngang nằm ngang, chữ T dễ đọc hơn nhưng đuôi gà kém rõ.</figcaption></figure>
+    </div>
+  </section>
+
+  <section>
+    <h2>Ở kích thước nhỏ</h2>
+    <p class="muted">Logo gần vuông nên dùng thẳng làm favicon và avatar được, không cần vẽ biểu tượng riêng.</p>
+    <div class="board" style="justify-content:flex-start">
+      <div class="sizes">
+        <figure><div class="tile" style="width:160px;height:160px;border-radius:32px"><svg viewBox="12 -16 166 142" width="116"><use href="#tus" x="12" y="-16" width="166" height="142"/></svg></div><figcaption>App icon</figcaption></figure>
+        <figure><div class="tile" style="width:112px;height:112px;border-radius:50%"><svg viewBox="12 -16 166 142" width="72"><use href="#tus" x="12" y="-16" width="166" height="142"/></svg></div><figcaption>Avatar</figcaption></figure>
+        <figure><svg class="plain" viewBox="12 -16 166 142" width="64"><use href="#tus" x="12" y="-16" width="166" height="142"/></svg><figcaption>64px</figcaption></figure>
+        <figure><svg class="plain" viewBox="12 -16 166 142" width="32"><use href="#tus" x="12" y="-16" width="166" height="142"/></svg><figcaption>32px</figcaption></figure>
+        <figure><svg class="plain" viewBox="12 -16 166 142" width="16"><use href="#tus" x="12" y="-16" width="166" height="142"/></svg><figcaption>16px</figcaption></figure>
+        <figure><div class="tab"><svg class="plain" viewBox="12 -16 166 142" width="18"><use href="#tus" x="12" y="-16" width="166" height="142"/></svg>tus.com</div><figcaption>Tab trình duyệt</figcaption></figure>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Hệ thống sản phẩm</h2>
+    <p class="muted">Tên sản phẩm đứng trước, con gà Tus đứng sau và giữ nguyên. Thêm sản phẩm mới chỉ cần đổi chữ phía trước.</p>
+    <div class="board" style="justify-content:flex-start"><div class="lockups" id="lockups"></div></div>
+  </section>
+
+  <section class="ask">
+    <h3>Để làm vòng 3, bạn cho tôi biết</h3>
+    <ol>
+      <li>Con gà giờ đã đủ rõ chưa, và chữ "Tus" có đọc ra ngay không?</li>
+      <li>Bạn chọn bản chính, bản tối giản hay bản chữ T thẳng?</li>
+      <li>Nét đang bo tròn, mềm. Bạn muốn giữ, hay chuyển sang đầu nét vát thẳng cho cứng cáp hơn?</li>
+    </ol>
+  </section>
+</main>
+
+<script>
+(function(){
+  const words=["Money","Sale","Infra","Clothes"];
+  const host=document.getElementById("lockups");
+  const NS="http://www.w3.org/2000/svg";
+  const VB="12 -16 166 142".split(" ").map(Number);
+  function build(){
+    host.innerHTML="";
+    words.forEach(w=>{
+      const svg=document.createElementNS(NS,"svg");
+      svg.setAttribute("role","img"); svg.setAttribute("aria-label",w+" Tus");
+      const t=document.createElementNS(NS,"text");
+      t.setAttribute("x","0"); t.setAttribute("y","116");
+      t.setAttribute("font-family","Lexend, Be Vietnam Pro, sans-serif");
+      t.setAttribute("font-weight","500"); t.setAttribute("font-size","64");
+      t.setAttribute("fill","currentColor"); t.textContent=w;
+      svg.appendChild(t); host.appendChild(svg);
+      let tw=0; try{ tw=t.getComputedTextLength(); }catch(e){ tw=w.length*50; }
+      const x0=tw+12, h=100, wdt=h*VB[2]/VB[3];
+      const u=document.createElementNS(NS,"use");
+      u.setAttribute("href","#tus"); u.setAttribute("x",x0); u.setAttribute("y",19);
+      u.setAttribute("width",wdt); u.setAttribute("height",h);
+      svg.appendChild(u);
+      svg.setAttribute("viewBox","-4 12 "+(x0+wdt+8)+" 128");
+    });
+  }
+  build();
+  if(document.fonts&&document.fonts.ready){document.fonts.ready.then(build);}
+})();
+</script>
